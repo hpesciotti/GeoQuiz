@@ -143,12 +143,6 @@ function displayQuestion() {
         <button class="btn-option"> d) ${currentQuestion.options[3]}</button>`;
 
     answersButton.innerHTML = optionList;
-
-    const option = document.querySelectorAll('.option');
-    for (let i = 0; i < option.length; i++) {
-        option[i].setAttribute('onclick', 'optionSelected(this)');
-    }
-
 }
 
 
