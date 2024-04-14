@@ -68,16 +68,78 @@ main {
 #question-container {
     background: #daf5ec;
     flex-direction: column;
-    margin: 10em, 1em, 3em;
+    margin: 10em 1em 3em;
     align-self: center;
     border-radius: 1em 1em;
     padding: 1em 1em;
     justify-content: center;
+    min-width: 75vw;
 }
 
 #question-section {
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
 }
+
+main h1 {
+    font-weight: 500;
+    text-align: center;
+    padding: 0 0.3em 0.3em;
+}
+
+main h2 {
+    font-weight: 350;
+    font-size: 1.2em;
+    text-align: justify;
+    padding:  0 0.3em 0.3em;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.3em;
+    gap: 0.4em;
+}
+
+.btn-option {
+    width: 100%;
+    padding: 0.4em 0.3em 0.4em;
+    color:#33414e;
+    background: whitesmoke;
+    border: 2px solid rgba(51, 65, 78, 50%);
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.btn-option:hover {
+    width: 100%;
+    padding: 0.4em 0.3em 0.4em;
+    background: #33414e;
+    color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+#btn-next {
+    width: 35%;
+    padding: 0.4em 0.3em 0.4em;
+    color:#20596c;
+    background: #f7e2b7;
+    border: 2px solid rgba(32, 89, 108, 90%);
+    border-radius: 0.3em;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0.3em auto 0.2em;
+    cursor: pointer;
+    display: block;
+}
+
+
 
 /* Footer */
 footer {
