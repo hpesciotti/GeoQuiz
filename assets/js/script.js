@@ -61,13 +61,11 @@ let allQuestions = [
     }
 ]
 
-
-
 // Set the variables based on elements in the html
 const questionElement = document.getElementById("question");
 const answersButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
-const optionButton = document.getElementsByClass("btn-option")
+const optionsButtons = document.getElementsByClassName("btn-option");
 
 // Defines an Array that will play the hole of questions databank in each game.
 let gameQuestions = []
@@ -85,7 +83,6 @@ let score = 0;
  * These function was built inpired by this post: https://stackoverflow.com/questions/52763765/push-3-random-names-into-a-new-array
  */
 function setGameQuestions() {
-    ;
     for (let i = 0; i < 3; i++) {
         let randomInt = Math.round(Math.random() * (allQuestions.length - 1));
         gameQuestions.push(allQuestions[randomInt]);
@@ -119,6 +116,42 @@ function setQuestionsOptions() {
 }
 setQuestionsOptions();
 
+/**
+ * This function gets the gameQuestions and establishes a number for each question.
+ * Then the randomized questions area displayed. The answer options are also displayed
+ * based on their array position.
+ */
+function displayQuestion() {
+    // This section of the function was based on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
+    currentQuestion = gameQuestions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    // The get answer code was based on Codehal's video tutorial: https://www.youtube.com/watch?v=Vp8x8-reqZA
+    let optionList = `<button class="btn-option">${currentQuestion.options[0]}</button>
+        <button class="btn-option">${currentQuestion.options[1]}</button>
+        <button class="btn-option">${currentQuestion.options[2]}</button>
+        <button class="btn-option">${currentQuestion.options[3]}</button>`;
+    answersButton.innerHTML = optionList;
+    // For loop event listener to ger the chosen option
+    for (let button of optionsButtons) {
+        button.addEventListener("click", selectAnswer);
+    }
+}
+ 
+//This function was partially adapated on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const selectedOption = selectedBtn.textContent; // Collects the click option button text content
+    const correctAnswer = currentQuestion.answer; // Collects the correct answer form the current question object
+// compares the text content to validate if either the chosen answer is correct or incorrect
+    if (selectedOption === correctAnswer) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+}
+
 // Run the Quiz and execute the displayQuestion function
 function runQuiz() {
     currentQuestionIndex = 0;
@@ -127,23 +160,4 @@ function runQuiz() {
     displayQuestion();
 }
 
-/**
- * This function gets the gameQuestions and establishes a number for each question.
- * Then the randomized questions area displayed. The answer options are also displayed
- * based on their array position.
- */
-function displayQuestion() {
-    // This section of the function was based on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
-    let currentQuestion = gameQuestions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
-    // The get answer code was based on Codehal's video tutorial: https://www.youtube.com/watch?v=Vp8x8-reqZA
-    let optionList = `<button class="btn-option"> a) ${currentQuestion.options[0]}</button>
-        <button class="btn-option"> b) ${currentQuestion.options[1]}</button>
-        <button class="btn-option"> c) ${currentQuestion.options[2]}</button>
-        <button class="btn-option"> d) ${currentQuestion.options[3]}</button>`;
-
-    answersButton.innerHTML = optionList;
-}
 runQuiz();
