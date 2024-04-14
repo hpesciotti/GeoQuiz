@@ -61,11 +61,13 @@ let allQuestions = [
     }
 ]
 
+
+
 // Set the variables based on elements in the html
 const questionElement = document.getElementById("question");
 const answersButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
-
+const optionButton = document.getElementsByClass("btn-option")
 
 // Defines an Array that will play the hole of questions databank in each game.
 let gameQuestions = []
@@ -144,6 +146,4 @@ function displayQuestion() {
 
     answersButton.innerHTML = optionList;
 }
-
-
 runQuiz();
