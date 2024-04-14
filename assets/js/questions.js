@@ -1,12 +1,12 @@
 let questions = [
     {
-        question: "There has been always a notion that the world was made up of five oceans. However, according to the most recent classifications, there are only three oceans in the world. Choose the alternative that correctly indicates their respective names:"
-        answer: "c) Pacific, Atlantic and Indian"
+        question: "There has been always a notion that the world was made up of five oceans. However, according to the most recent classifications, there are only three oceans in the world. Choose the alternative that correctly indicates their respective names:",
+        answer: "c) Pacific, Atlantic and Indian",
         options: [
             "a) Arctic, Indian and Pacific",
             "b) Antarctic, Atlantic and Indian",
-            "c) Pacific, Atlantic and Indian"
-            "d) Arctic, Antarctic  and Atlantic",
+            "c) Pacific, Atlantic and Indian",
+            "d) Arctic, Antarctic  and Atlantic"
         ]
     },
     {
