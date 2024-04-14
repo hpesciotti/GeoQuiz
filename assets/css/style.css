@@ -39,19 +39,21 @@ header {
 }
 
 /* Title */
+/* drop-shadow and font inspired by Codehal Tutorial */
 .header-title {
     font-size: 2rem;
     padding: 1rem;
     font-weight: 750;
-    filter: drop-shadow(0 0 2px #33414e);
 }
 
 #header-word-1 {
     color: #daf5ec;
+    filter: drop-shadow(0 0 2px #33414e);
 }
 
 #header-word-2 {
-    color: #a3c18b;
+    color: #4996a1;
+    filter: drop-shadow(0 0 2px #f3f5ed);
 }
 
 /* Main */
@@ -66,7 +68,7 @@ main {
 }
 
 #question-container {
-    background: #daf5ec;
+    background: rgba(218, 245, 236, 70%);
     flex-direction: column;
     margin: 10em 1em 3em;
     align-self: center;
@@ -105,7 +107,7 @@ main h2 {
     width: 100%;
     padding: 0.4em 0.3em 0.4em;
     color:#33414e;
-    background: whitesmoke;
+    background: #f3f5ed;
     border: 2px solid rgba(51, 65, 78, 50%);
     border-radius: 0.3em;
     font-size: 1.2em;
@@ -117,8 +119,8 @@ main h2 {
     width: 100%;
     padding: 0.4em 0.3em 0.4em;
     background: #33414e;
-    color: whitesmoke;
-    border: 2px solid rgba(255, 255, 255, 50%);
+    color: #f3f5ed;
+    border: 2px solid rgba(243, 245, 237, 50%);
     border-radius: 0.3em;
     font-size: 1.2em;
     font-weight: 350;
