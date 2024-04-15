@@ -80,7 +80,7 @@ let score = 0;
  * This function generates the playable questions.
  * It takes "n" questions from the databank of questions((let i = 0; i < "n"; i++)), variable "allQuestions"
  * and returns/pushes an array of playable questions to the variable "gameQuestions".
- * These function was built inpired by this post: https://stackoverflow.com/questions/52763765/push-3-random-names-into-a-new-array
+ * These function was built inspired by this post: https://stackoverflow.com/questions/52763765/push-3-random-names-into-a-new-array
  */
 function setGameQuestions() {
     for (let i = 0; i < 3; i++) {
@@ -95,8 +95,8 @@ setGameQuestions();
 
 /**
  * This function shuffles the answer options for each question from the gameQuestions array.
- * It is uses Durstenfeld shuffle algorithm.
- * These function was built inpired by this post: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+ * It uses Durstenfeld shuffle algorithm.
+ * These function was built inspired by this post: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
  */
 function setQuestionsOptions() {
     function shuffleArray(options) {
@@ -118,7 +118,7 @@ setQuestionsOptions();
 
 /**
  * This function gets the gameQuestions and establishes a number for each question.
- * Then the randomized questions area displayed. The answer options are also displayed
+ * Then the randomized questions are displayed. The answer options are also displayed
  * based on their array position.
  */
 function displayQuestion() {
@@ -135,24 +135,43 @@ function displayQuestion() {
     answersButton.innerHTML = optionList;
     // For loop event listener to ger the chosen option
     for (let button of optionsButtons) {
-        button.addEventListener("click", selectAnswer);
-    }
-}
- 
-//This function was partially adapated on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
-function selectAnswer(e) {
-    const selectedBtn = e.target;
-    const selectedOption = selectedBtn.textContent; // Collects the click option button text content
-    const correctAnswer = currentQuestion.answer; // Collects the correct answer form the current question object
-// compares the text content to validate if either the chosen answer is correct or incorrect
-    if (selectedOption === correctAnswer) {
-        console.log("true");
-    } else {
-        console.log("false");
+        button.addEventListener("click", validateAnswer);
     }
 }
 
-// Run the Quiz and execute the displayQuestion function
+//This function was partially adapated on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
+function validateAnswer(e) {
+    const selectedBtn = e.target;
+    const selectedOption = selectedBtn.textContent; // Collects the click option button text content
+    const correctAnswer = currentQuestion.answer; // Collects the correct answer form the current question object
+
+    /**
+     * Compares the selectedBtn button to correctAnswer object. 
+     * If is true, the function adds "correct" style to the object; else, it adds the "incorrect" style.
+     * Then "else" runs through the array of answer.buttons to identify the correct answer
+     * and Add the class "correct" to the correct answer option for further styling.
+     * This function was difficult to implement. I thought of refactoring my array to resemble GreaStack' tutorial.
+     * When I was about to start that process, a friend developer helped me out with an Array.from part.
+     */ 
+    if (selectedOption === correctAnswer) {
+        selectedBtn.classList.add("correct");
+    } else {
+        selectedBtn.classList.add("incorrect");
+        Array.from(answersButton.children).forEach(button => {
+            if (button.textContent === correctAnswer) {
+                button.classList.add("correct");
+            }
+        });
+    }
+
+    // Disables all the buttons after selection
+    Array.from(answersButton.children).forEach(button => {
+        button.disabled = true;
+    });
+
+    nextButton.style.display = "block";
+}
+
 function runQuiz() {
     currentQuestionIndex = 0;
     score = 0;
