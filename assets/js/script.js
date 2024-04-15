@@ -343,7 +343,7 @@ function displayScore() {
     } else {
         questionElement.innerHTML = `You scorded ${score} out of 10! 
         You aced the GeoQuiz!
-        I've have won a GeoKiss!` 
+        You deserve a GeoKiss!` 
     };
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block"

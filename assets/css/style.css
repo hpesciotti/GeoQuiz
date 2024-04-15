@@ -144,12 +144,12 @@ main h2 {
 /* Set styles from validateAnswer() */ 
 
 .correct {
-    background: rgb(11, 165, 29);
+    background: #a4dbb1;
     
 }
 
 .incorrect {
-    background: hwb(355 39% 13%);
+    background: #e2868e;
     
 }
 
