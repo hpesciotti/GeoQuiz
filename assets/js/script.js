@@ -71,9 +71,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Which of the following events was not related to the Cold War?",
-        "answer": "Spanish Civil War",
-        "options": [
+        question: "Which of the following events was not related to the Cold War?",
+        answer: "Spanish Civil War",
+        options: [
             "Spanish Civil War",
             "Korean War",
             "Cuban Revolution",
@@ -81,9 +81,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Which nation did NOT have a socialist government during the Cold War years?",
-        "answer": "South Africa",
-        "options": [
+        question: "Which nation did NOT have a socialist government during the Cold War years?",
+        answer: "South Africa",
+        options: [
             "Albania",
             "Poland",
             "Vietnam",
@@ -91,9 +91,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Africa is divided into two large regions: North Africa and Sub-Saharan Africa. A sociocultural characteristic of North Africa is:",
-        "answer": "The predominant population practices Islam.",
-        "options": [
+        question: "Africa is divided into two large regions: North Africa and Sub-Saharan Africa. A sociocultural characteristic of North Africa is:",
+        answer: "The predominant population practices Islam.",
+        options: [
             "The small cultural diversity of the local native groups.",
             "Colonization of the region by Asian countries.",
             "Great social equality among the region's inhabitants.",
@@ -101,9 +101,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "What is the hottest desert in the world?",
-        "answer": "Sahara",
-        "options": [
+        question: "What is the hottest desert in the world?",
+        answer: "Sahara",
+        options: [
             "Sahara",
             "Atacama",
             "Gobi",
@@ -111,9 +111,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Africa has an expanding demographic landscape. One indicator that explains Africa's population growth is:",
-        "answer": "The high fertility rate.",
-        "options": [
+        question: "Africa has an expanding demographic landscape. One indicator that explains Africa's population growth is:",
+        answer: "The high fertility rate.",
+        options: [
             "Increasing infant mortality.",
             "Low life expectancy.",
             "The low replacement rate.",
@@ -121,9 +121,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "The Mid-Atlantic ridge results from what kind of tectonic plate boundaries?",
-        "answer": "Divergent boundaries",
-        "options": [
+        question: "The Mid-Atlantic ridge results from what kind of tectonic plate boundaries?",
+        answer: "Divergent boundaries",
+        options: [
             "Divergent boundaries",
             "Convergent boundary",
             "Transform boundary",
@@ -131,9 +131,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Which tectonic activity formed the Andes Mountains in South America?",
-        "answer": "Subduction zone",
-        "options": [
+        question: "Which tectonic activity formed the Andes Mountains in South America?",
+        answer: "Subduction zone",
+        options: [
             "Subduction zone",
             "Transform boundary",
             "Divergent boundaries",
@@ -141,9 +141,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Listed below are the countries and their most polluted cities, except:",
-        "answer": "Finland - Helsinki",
-        "options": [
+        question: "Listed below are the countries and their most polluted cities, except:",
+        answer: "Finland - Helsinki",
+        options: [
             "Russia - Dzerzhinsk",
             "Ukraine - Chernobyl",
             "Finland - Helsinki",
@@ -151,9 +151,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "Countries located north of the equator belong to the Northern Hemisphere:",
-        "answer": "Northern Hemisphere",
-        "options": [
+        question: "Countries located north of the equator belong to what hemisphere?",
+        answer: "Northern Hemisphere",
+        options: [
             "Western Hemisphere",
             "Northern Hemisphere",
             "Southern Hemisphere",
@@ -161,9 +161,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "The continent with the highest concentration of fresh water is:",
-        "answer": "America",
-        "options": [
+        question: "The continent with the highest concentration of fresh water is:",
+        answer: "America",
+        options: [
             "America",
             "Asia",
             "Oceania",
@@ -171,9 +171,9 @@ let allQuestions = [
         ]
     },
     {
-        "question": "What rock outcrops form the important landmark of Giant's Causeway in Northern Ireland?",
-        "answer": "Basalt",
-        "options": [
+        question: "What rock outcrops form the important landmark of Giant's Causeway in Northern Ireland?",
+        answer: "Basalt",
+        options: [
             "Diorite",
             "Granite",
             "Marble",
@@ -322,7 +322,6 @@ function handleNextButton() {
     }
 }
 
-
 function displayScore() {
     removeQuestions();
     if (score <= 5) {
@@ -337,13 +336,11 @@ function displayScore() {
 
     } else if (score <= 8) {
         questionElement.innerHTML = `You scorded ${score} out of 10!
-        That's impressive, 
-        You area a Geography savant!`
+        That's impressive, you area a Geography savant!`
 
     } else {
         questionElement.innerHTML = `You scorded ${score} out of 10! 
-        You aced the GeoQuiz!
-        You deserve a GeoKiss!` 
+        You aced the GeoQuiz! You deserve a GeoKiss!` 
     };
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block"
