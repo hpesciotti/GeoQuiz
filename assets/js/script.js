@@ -50,6 +50,17 @@ let allQuestions = [
         ]
     },
     {
+        question: "Certain places on planet Earth are home to more extraordinary biodiversity. Which regions have the most remarkable diversity of fauna and flora?",
+        answer: "Tropical forests",
+        options: [
+            "Tropical forests",
+            "Oceans",
+            "Deserts",
+            "Temperate forests"
+        ]
+
+    },
+    {
         question: "What percentage of the world's water do rivers and lakes hold?",
         answer: "9%",
         options: [
@@ -58,12 +69,122 @@ let allQuestions = [
             "9%",
             "35%"
         ]
+    },
+    {
+        "question": "Which of the following events was not related to the Cold War?",
+        "answer": "Spanish Civil War",
+        "options": [
+            "Spanish Civil War",
+            "Korean War",
+            "Cuban Revolution",
+            "Latin American dictatorships"
+        ]
+    },
+    {
+        "question": "Which nation did NOT have a socialist government during the Cold War years?",
+        "answer": "South Africa",
+        "options": [
+            "Albania",
+            "Poland",
+            "Vietnam",
+            "South Africa"
+        ]
+    },
+    {
+        "question": "Africa is divided into two large regions: North Africa and Sub-Saharan Africa. A sociocultural characteristic of North Africa is:",
+        "answer": "The predominant population practices Islam.",
+        "options": [
+            "The small cultural diversity of the local native groups.",
+            "Colonization of the region by Asian countries.",
+            "Great social equality among the region's inhabitants.",
+            "The predominant population practices Islam."
+        ]
+    },
+    {
+        "question": "What is the hottest desert in the world?",
+        "answer": "Sahara",
+        "options": [
+            "Sahara",
+            "Atacama",
+            "Gobi",
+            "Kalahari"
+        ]
+    },
+    {
+        "question": "Africa has an expanding demographic landscape. One indicator that explains Africa's population growth is:",
+        "answer": "The high fertility rate.",
+        "options": [
+            "Increasing infant mortality.",
+            "Low life expectancy.",
+            "The low replacement rate.",
+            "The high fertility rate."
+        ]
+    },
+    {
+        "question": "The Mid-Atlantic ridge results from what kind of tectonic plate boundaries?",
+        "answer": "Divergent boundaries",
+        "options": [
+            "Divergent boundaries",
+            "Convergent boundary",
+            "Transform boundary",
+            "Subduction zone"
+        ]
+    },
+    {
+        "question": "Which tectonic activity formed the Andes Mountains in South America?",
+        "answer": "Subduction zone",
+        "options": [
+            "Subduction zone",
+            "Transform boundary",
+            "Divergent boundaries",
+            "Rift"
+        ]
+    },
+    {
+        "question": "Listed below are the countries and their most polluted cities, except:",
+        "answer": "Finland - Helsinki",
+        "options": [
+            "Russia - Dzerzhinsk",
+            "Ukraine - Chernobyl",
+            "Finland - Helsinki",
+            "India - Vapi"
+        ]
+    },
+    {
+        "question": "Countries located north of the equator belong to the Northern Hemisphere:",
+        "answer": "Northern Hemisphere",
+        "options": [
+            "Western Hemisphere",
+            "Northern Hemisphere",
+            "Southern Hemisphere",
+            "Eastern Hemisphere"
+        ]
+    },
+    {
+        "question": "The continent with the highest concentration of fresh water is:",
+        "answer": "America",
+        "options": [
+            "America",
+            "Asia",
+            "Oceania",
+            "Africa"
+        ]
+    },
+    {
+        "question": "What rock outcrops form the important landmark of Giant's Causeway in Northern Ireland?",
+        "answer": "Basalt",
+        "options": [
+            "Diorite",
+            "Granite",
+            "Marble",
+            "Basalt"
+        ]
     }
 ]
 
 // Set the variables based on elements in the html
 const questionElement = document.getElementById("question");
-const answersButton = document.getElementById("answer-buttons");
+const answersButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
 const optionsButtons = document.getElementsByClassName("btn-option");
 
@@ -83,7 +204,7 @@ let score = 0;
  * These function was built inspired by this post: https://stackoverflow.com/questions/52763765/push-3-random-names-into-a-new-array
  */
 function setGameQuestions() {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 10; i++) {
         let randomInt = Math.round(Math.random() * (allQuestions.length - 1));
         gameQuestions.push(allQuestions[randomInt]);
         allQuestions.splice(randomInt, 1);
@@ -122,7 +243,7 @@ setQuestionsOptions();
  * based on their array position.
  */
 function displayQuestion() {
-    resetPopUp();
+    removeQuestions();
     // This section of the function was based on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
     currentQuestion = gameQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -133,7 +254,7 @@ function displayQuestion() {
         <button class="btn-option">${currentQuestion.options[1]}</button>
         <button class="btn-option">${currentQuestion.options[2]}</button>
         <button class="btn-option">${currentQuestion.options[3]}</button>`;
-    answersButton.innerHTML = optionList;
+    answersButtons.innerHTML = optionList;
     // For loop event listener to ger the chosen option
     for (let button of optionsButtons) {
         button.addEventListener("click", validateAnswer);
@@ -159,7 +280,7 @@ function validateAnswer(e) {
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
-        Array.from(answersButton.children).forEach(button => {
+        Array.from(answersButtons.children).forEach(button => {
             if (button.textContent === correctAnswer) {
                 button.classList.add("correct");
             }
@@ -167,18 +288,27 @@ function validateAnswer(e) {
     }
 
     // Disables all the buttons after selection
-    Array.from(answersButton.children).forEach(button => {
+    Array.from(answersButtons.children).forEach(button => {
         button.disabled = true;
     });
 
     nextButton.style.display = "block";
 }
 
+// Removes the questions and answer buttons based on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
+function removeQuestions() {
+    nextButton.style.display = "none";
+    while (answersButtons.firstChild) {
+        answersButtons.removeChild(answersButtons.firstChild);
+    }
+}
+
+// A
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < gameQuestions.length) {
         handleNextButton();
     } else {
-        runQuiz(); // Temporary - turn to the score later
+        runQuiz();
     }
 
 });
@@ -188,8 +318,35 @@ function handleNextButton() {
     if (currentQuestionIndex < gameQuestions.length) {
         displayQuestion();
     } else {
-        showScore();
+        displayScore();
     }
+}
+
+
+function displayScore() {
+    removeQuestions();
+    if (score <= 5) {
+        questionElement.innerHTML = `You scorded ${score} out of 10!
+        Best luck next Time!`
+    } else if (score <= 6) {
+        questionElement.innerHTML = `You scorded ${score} out of 10!
+        That's very good!` 
+    } else if (score <= 7) {
+        questionElement.innerHTML = `You scorded ${score} out of 10!
+        You know your Geography!`
+
+    } else if (score <= 8) {
+        questionElement.innerHTML = `You scorded ${score} out of 10!
+        That's impressive, 
+        You area a Geography savant!`
+
+    } else {
+        questionElement.innerHTML = `You scorded ${score} out of 10! 
+        You aced the GeoQuiz!
+        I've have won a GeoKiss!` 
+    };
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block"
 }
 
 function runQuiz() {
