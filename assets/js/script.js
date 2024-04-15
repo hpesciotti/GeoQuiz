@@ -122,6 +122,7 @@ setQuestionsOptions();
  * based on their array position.
  */
 function displayQuestion() {
+    resetPopUp();
     // This section of the function was based on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
     currentQuestion = gameQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -152,9 +153,10 @@ function validateAnswer(e) {
      * and Add the class "correct" to the correct answer option for further styling.
      * This function was difficult to implement. I thought of refactoring my array to resemble GreaStack' tutorial.
      * When I was about to start that process, a friend developer helped me out with an Array.from part.
-     */ 
+     */
     if (selectedOption === correctAnswer) {
         selectedBtn.classList.add("correct");
+        score++;
     } else {
         selectedBtn.classList.add("incorrect");
         Array.from(answersButton.children).forEach(button => {
@@ -170,6 +172,24 @@ function validateAnswer(e) {
     });
 
     nextButton.style.display = "block";
+}
+
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < gameQuestions.length) {
+        handleNextButton();
+    } else {
+        runQuiz(); // Temporary - turn to the score later
+    }
+
+});
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < gameQuestions.length) {
+        displayQuestion();
+    } else {
+        showScore();
+    }
 }
 
 function runQuiz() {
