@@ -4,13 +4,6 @@ const answersButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
 const optionsButtons = document.getElementsByClassName("btn-option");
 
-// Fetch
-
-   fetch('assets/data/questions.json')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log("error"));
-
 let allQuestions = [];
 // Defines an Array that will play the hole of questions databank in each game.
 let gameQuestions = [];
@@ -21,7 +14,16 @@ let currentQuestion;
 let currentQuestionIndex = 0;
 let score = 0;
 
-console.log(allQuestions)
+document.addEventListener("DOMContentLoaded", (event) => {
+    fetch("assets/data/questions.json")
+        .then(res => res.json())
+        .then(data => {
+            allQuestions = data;
+            setGameQuestions(); //temporary
+            setQuestionsOptions(); //temporary
+            runQuiz(); //temporary
+        });
+});
 
 /**
  * This function generates the playable questions.
@@ -37,7 +39,6 @@ function setGameQuestions() {
     }
     return gameQuestions;
 }
-setGameQuestions();
 
 
 /**
@@ -61,7 +62,6 @@ function setQuestionsOptions() {
         question.options = shuffleArray(question.options);
     });
 }
-setQuestionsOptions();
 
 /**
  * This function gets the gameQuestions and establishes a number for each question.
@@ -178,5 +178,3 @@ function runQuiz() {
     nextButton.innerHTML = "Next";
     displayQuestion();
 }
-
-runQuiz();
