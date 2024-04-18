@@ -116,7 +116,7 @@ main h2 {
 }
 
 /* Not disable stops the hover effect after the question is answered*/ 
-.btn-option:hover not(:disabled) {
+.btn-option:hover:not([disabled]) {
     width: 100%;
     padding: 0.4em 0.3em 0.4em;
     background: #33414e;
