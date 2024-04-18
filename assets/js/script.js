@@ -129,7 +129,7 @@ function removeQuestions() {
     }
 }
 
-// This function moves the progress bar
+// This function moves the progress bar. It was inspired by W3 School (https://www.w3schools.com/howto/howto_js_progressbar.asp)
 function moveBar() {
     let myProgress = document.getElementById("my-progress");
     let progressBar = document.getElementById("progress-bar");
@@ -144,14 +144,14 @@ function moveBar() {
     movesIf();
 }
 
-// A
+// Moves through the question of the quizz
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < gameQuestions.length) {
         handleNextButton();
     } else {
-        runQuiz();
+        runQuiz(); // Play Again
     }
-    moveBar()
+    moveBar() // Calls the move bar function
 });
 
 function handleNextButton() {
@@ -166,21 +166,21 @@ function handleNextButton() {
 function displayScore() {
     removeQuestions();
     if (score <= 5) {
-        questionElement.innerHTML = `You scorded ${score} out of 10!
+        questionElement.innerHTML = `You scored ${score} out of 10!<br>
         Best luck next Time!`
     } else if (score <= 6) {
-        questionElement.innerHTML = `You scorded ${score} out of 10!
+        questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's very good!`
     } else if (score <= 7) {
-        questionElement.innerHTML = `You scorded ${score} out of 10!
+        questionElement.innerHTML = `You scored ${score} out of 10!<br>
         You know your Geography!`
 
     } else if (score <= 8) {
-        questionElement.innerHTML = `You scorded ${score} out of 10!
+        questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's impressive, you area a Geography savant!`
 
     } else {
-        questionElement.innerHTML = `You scorded ${score} out of 10! 
+        questionElement.innerHTML = `You scorded ${score} out of 10!<br>
         You aced the GeoQuiz! You deserve a GeoKiss!`
     };
     nextButton.innerHTML = "Play Again";
