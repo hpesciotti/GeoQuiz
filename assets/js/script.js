@@ -129,6 +129,21 @@ function removeQuestions() {
     }
 }
 
+// This function moves the progress bar
+function moveBar() {
+    let myProgress = document.getElementById("my-progress");
+    let progressBar = document.getElementById("progress-bar");
+    function movesIf() {
+        if (myProgress.style.width === '100%') {
+            myProgress.style.display = 'none'
+            progressBar.style.display = 'none'
+        } else {
+            myProgress.style.width = (((currentQuestionIndex + 1) * 10) + "%");
+        }
+    }
+    movesIf();
+}
+
 // A
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < gameQuestions.length) {
@@ -136,7 +151,7 @@ nextButton.addEventListener("click", () => {
     } else {
         runQuiz();
     }
-
+    moveBar()
 });
 
 function handleNextButton() {

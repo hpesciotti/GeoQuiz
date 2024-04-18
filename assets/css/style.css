@@ -153,6 +153,23 @@ main h2 {
     
 }
 
+/* Progress Bar */
+#progress-bar {
+    margin: 0.5em auto 0.1em;
+    border-radius: 0.2em;
+    width: 40%;
+    height: 0.5rem;
+    background-color:  #f7e2b7;
+    display: block;
+}
+  
+#my-progress {
+    width: 10%;
+    height: 0.5rem;
+    border-radius: 0.2em;
+    background-color: rgba(32, 89, 108);
+}
+
 /* Footer */
 footer {
     background-color: #f7e2b7;
