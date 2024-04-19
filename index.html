@@ -9,11 +9,11 @@
     <meta name="keywords" content="GeoQUiz, Trivia, Game, Geopolitcs, Climatology, Landforms, Earth, Biogeography">
     <!-- Title -->
     <title>GeoQuiz</title>
-     <!-- Favicon -->
-     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -23,7 +23,7 @@
     <header>
         <a href="index.html" class="header-title">
             <span id="header-word-1">Geo</span>
-            <span id="header-word-2">Quiz</span>
+            <span class="header-word-2">Quiz</span>
         </a>
     </header>
 
@@ -32,7 +32,16 @@
         <section id="question-container">
             <div id="quiz-section">
                 <div id="quiz-box">
-                    <h1>Quiz</h1>
+                    <span>
+                        <h1 class="header-word-2"><i class="fa-solid fa-earth-americas"></i> Quiz <i
+                                class="fa-solid fa-earth-europe"></i></h1>
+                    </span>
+                    <div id="score-box">
+                        <div id="score-counter">
+                            <span id="correct-counter"><i class="fa-regular fa-circle-check"></i> : 0</span>
+                            <span id="incorrect-counter"><i class="fa-regular fa-circle-xmark"></i> : 0</span>
+                        </div>
+                    </div>
                     <h2 id="question">Question placemark holder</h2>
                     <div id="answer-buttons">
                         <button class="btn-option">Answer 1</button>
@@ -41,10 +50,10 @@
                         <button class="btn-option">Answer 4</button>
                     </div>
                     <button id="btn-next">Next</button>
+                    <div id="progress-bar">
+                        <div id="my-progress"></div>
+                    </div>
                 </div>
-                <div id="progress-bar">
-                    <div id="my-progress"></div>
-                  </div>
             </div>
             </div>
         </section>

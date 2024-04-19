@@ -51,7 +51,7 @@ header {
     filter: drop-shadow(0 0 2px #33414e);
 }
 
-#header-word-2 {
+.header-word-2 {
     color: #4996a1;
     filter: drop-shadow(0 0 2px #f3f5ed);
 }
@@ -89,7 +89,7 @@ main h1 {
 }
 
 main h2 {
-    font-weight: 350;
+    font-weight: 450;
     font-size: 1.2em;
     text-align: justify;
     padding:  0 0.3em 0.3em;
@@ -141,17 +141,50 @@ main h2 {
     cursor: pointer;
     display: none; /* Changes with validateAnswer() */
 }
-/* Set styles from validateAnswer() */ 
 
+/* Set styles from validateAnswer() */ 
 .correct {
     background: #a4dbb1;
-    
+    color:#2a494c;
+    border: 2px solid rgba(42, 73, 76, 90%);
+    font-weight: 600;
 }
 
 .incorrect {
     background: #e2868e;
-    
+    color:#95242d;
+    border: 2px solid rgba(149, 36, 45, 90%);
+    font-weight: 600;
 }
+
+/* Set styles from validateAnswer() */ 
+#score-box{
+    display: none;
+}
+
+#score-counter{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    justify-content: center;
+    align-items: center;
+    padding:  0 0.6em 0;
+}
+
+#correct-counter {
+    color:#e7f0e9;
+    filter: drop-shadow(0 0 2px #2a494c);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#incorrect-counter {
+    color:#e7f0e9;
+    filter: drop-shadow(0 0 2px #95242d);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
 
 /* Progress Bar */
 #progress-bar {

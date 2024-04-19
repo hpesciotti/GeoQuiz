@@ -3,6 +3,7 @@ const questionElement = document.getElementById("question");
 const answersButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
 const optionsButtons = document.getElementsByClassName("btn-option");
+const scoreBox = document.getElementById("score-box");
 
 let allQuestions = [];
 // Defines an Array that will play the hole of questions databank in each game.
@@ -13,6 +14,7 @@ let currentQuestion;
 // Scoreboard variable
 let currentQuestionIndex = 0;
 let score = 0;
+let wrongScore = 0;
 
 document.addEventListener("DOMContentLoaded", (event) => {
     fetch("assets/data/questions.json")
@@ -69,12 +71,12 @@ function setQuestionsOptions() {
  * based on their array position.
  */
 function displayQuestion() {
+    scoreBox.style.display = 'block';
     removeQuestions();
     // This section of the function was based on GreatStack's video tutorial: https://www.youtube.com/watch?v=PBcqGxrr9g8
     currentQuestion = gameQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
     // The get answer code was based on Codehal's video tutorial: https://www.youtube.com/watch?v=Vp8x8-reqZA
     let optionList = `<button class="btn-option">${currentQuestion.options[0]}</button>
         <button class="btn-option">${currentQuestion.options[1]}</button>
@@ -92,7 +94,8 @@ function validateAnswer(e) {
     const selectedBtn = e.target;
     const selectedOption = selectedBtn.textContent; // Collects the click option button text content
     const correctAnswer = currentQuestion.answer; // Collects the correct answer form the current question object
-
+    const incorrectCounter = document.getElementById('incorrect-counter');
+    const correctCounter = document.getElementById('correct-counter');
     /**
      * Compares the selectedBtn button to correctAnswer object. 
      * If is true, the function adds "correct" style to the object; else, it adds the "incorrect" style.
@@ -104,8 +107,11 @@ function validateAnswer(e) {
     if (selectedOption === correctAnswer) {
         selectedBtn.classList.add("correct");
         score++;
+        correctCounter.innerHTML = `<i class="fa-regular fa-circle-xmark"></i> : ${score}`;
     } else {
         selectedBtn.classList.add("incorrect");
+        wrongScore++;
+        incorrectCounter.innerHTML = `<i class="fa-regular fa-circle-xmark"></i> : ${wrongScore}`;
         Array.from(answersButtons.children).forEach(button => {
             if (button.textContent === correctAnswer) {
                 button.classList.add("correct");
@@ -135,8 +141,8 @@ function moveBar() {
     let progressBar = document.getElementById("progress-bar");
     function movesIf() {
         if (myProgress.style.width === '100%') {
-            myProgress.style.display = 'none'
-            progressBar.style.display = 'none'
+            myProgress.style.display = 'none';
+            progressBar.style.display = 'none';
         } else {
             myProgress.style.width = (((currentQuestionIndex + 1) * 10) + "%");
         }
@@ -148,6 +154,7 @@ function moveBar() {
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < gameQuestions.length) {
         handleNextButton();
+
     } else {
         runQuiz(); // Play Again
     }
@@ -185,6 +192,7 @@ function displayScore() {
     };
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block"
+    scoreBox.style.display = 'none';
 }
 
 function runQuiz() {
