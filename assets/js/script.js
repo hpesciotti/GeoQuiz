@@ -11,7 +11,7 @@ let gameQuestions = [];
 // Defines an Array to used in the radomization of answer options.
 let questionOptions = [];
 let currentQuestion;
-// Scoreboard variable
+// Scoreboard variables
 let currentQuestionIndex = 0;
 let score = 0;
 let wrongScore = 0;
@@ -106,7 +106,7 @@ function validateAnswer(e) {
     if (selectedOption === correctAnswer) {
         selectedBtn.classList.add("correct");
         score++;
-        correctCounter.innerHTML = `<i class="fa-regular fa-circle-xmark"></i> : ${score}`;
+        correctCounter.innerHTML = `<i class="fa-regular fa-circle-check"></i> : ${score}`;
     } else {
         selectedBtn.classList.add("incorrect");
         wrongScore++;
@@ -149,7 +149,7 @@ function moveBar() {
     movesIf();
 }
 
-// Moves through the question of the quizz
+// Moves through the questions of the quizz and reload the DOM if the user want to play again
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < gameQuestions.length) {
         handleNextButton();
@@ -157,10 +157,9 @@ nextButton.addEventListener("click", () => {
     } else {
         location.reload() // Play Again
     }
-    moveBar() // Calls the move bar function
 });
 
-// 
+// Establishes the way to move through the questions of the quizz until reaches the score
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < gameQuestions.length) {
@@ -168,6 +167,7 @@ function handleNextButton() {
     } else {
         displayScore();
     }
+    moveBar() // Calls the move bar function
 }
 
 // Calls the scoreboard
@@ -186,7 +186,7 @@ function displayScore() {
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         You know your Geography!`
 
-    } else if (score <= 8) {
+    } else if (score <= 9) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's impressive, you area a Geography savant!`
@@ -201,6 +201,7 @@ function displayScore() {
     scoreBox.style.display = 'none';
 }
 
+// Runs the quizz
 function runQuiz() {
     currentQuestionIndex = 0;
     score = 0;
