@@ -187,10 +187,12 @@ function displayScore() {
         questionElement.style.textAlign = 'center';;
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         Best luck next Time!`
+        
     } else if (score <= 6) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's very good!`
+
     } else if (score <= 7) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
@@ -199,7 +201,7 @@ function displayScore() {
     } else if (score <= 9) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
-        That's impressive, you area a Geography savant!`
+        That's impressive, you are a Geography savant!`
 
     } else {
         questionElement.style.textAlign = 'center';
