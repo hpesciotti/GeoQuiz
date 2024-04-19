@@ -4,6 +4,8 @@ const answersButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
 const optionsButtons = document.getElementsByClassName("btn-option");
 const scoreBox = document.getElementById("score-box");
+const instructionsBox = document.getElementById("instructions-box");
+const quizBox = document.getElementById("quiz-box");
 
 let allQuestions = [];
 // Defines an Array that will play the hole of questions databank in each game.
@@ -21,11 +23,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .then(res => res.json())
         .then(data => {
             allQuestions = data;
-            setGameQuestions(); //temporary
-            setQuestionsOptions(); //temporary
-            runQuiz(); //temporary
         });
 });
+
+// Inspired by Amy Richardson project
+function enterPlayerName() {
+    let playerName = document.getElementById("enter-player-name").value; // Get the value of the input field
+    document.getElementById("player-name").innerText = "Player Name: " + playerName; // Display player name on the HTML page
+    instructionsBox.style.display = "none";
+    quizBox.style.display = "block";
+    setGameQuestions(); //temporary
+    setQuestionsOptions(); //temporary
+    runQuiz(); //temporary
+}
 
 /**
  * This function generates the playable questions.
