@@ -156,6 +156,8 @@ nextButton.addEventListener("click", () => {
         handleNextButton();
 
     } else {
+        setGameQuestions(); //temporary
+        setQuestionsOptions(); //temporary
         runQuiz(); // Play Again
     }
     moveBar() // Calls the move bar function
@@ -173,20 +175,25 @@ function handleNextButton() {
 function displayScore() {
     removeQuestions();
     if (score <= 5) {
+        questionElement.style.textAlign = 'center';;
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         Best luck next Time!`
     } else if (score <= 6) {
+        questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's very good!`
     } else if (score <= 7) {
+        questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         You know your Geography!`
 
     } else if (score <= 8) {
+        questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's impressive, you area a Geography savant!`
 
     } else {
+        questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scorded ${score} out of 10!<br>
         You aced the GeoQuiz! You deserve a GeoKiss!`
     };
@@ -198,6 +205,7 @@ function displayScore() {
 function runQuiz() {
     currentQuestionIndex = 0;
     score = 0;
+    wrongScore = 0;
     nextButton.innerHTML = "Next";
     displayQuestion();
 }
