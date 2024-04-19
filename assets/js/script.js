@@ -42,7 +42,6 @@ function setGameQuestions() {
     return gameQuestions;
 }
 
-
 /**
  * This function shuffles the answer options for each question from the gameQuestions array.
  * It uses Durstenfeld shuffle algorithm.
@@ -156,13 +155,12 @@ nextButton.addEventListener("click", () => {
         handleNextButton();
 
     } else {
-        setGameQuestions(); //temporary
-        setQuestionsOptions(); //temporary
-        runQuiz(); // Play Again
+        location.reload() // Play Again
     }
     moveBar() // Calls the move bar function
 });
 
+// 
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < gameQuestions.length) {
@@ -172,6 +170,7 @@ function handleNextButton() {
     }
 }
 
+// Calls the scoreboard
 function displayScore() {
     removeQuestions();
     if (score <= 5) {
