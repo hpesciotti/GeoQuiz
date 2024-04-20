@@ -52,7 +52,8 @@ function stopStopwatch() {
 
 // Calculate the Final Score (LeaderboardScore) to be shown on the Leaderboard
 function calcLeaderboardScore() {
-    leaderboardScore = Math.floor((score * 10000) / (elapsedTime / 1000));
+    let eslapseTimeMinutes = (elapsedTime/60000) 
+    leaderboardScore = Math.floor(((score * score) / (score / eslapseTimeMinutes))*10);
 }
 
 /**
@@ -206,7 +207,8 @@ function displayScore() {
     if (score <= 5) {
         questionElement.style.textAlign = 'center';;
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
-        Best luck next Time!`
+        Best luck next Time!
+        Your final score is ${leaderboardScore}`
 
     } else if (score <= 6) {
         questionElement.style.textAlign = 'center';
