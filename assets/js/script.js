@@ -194,14 +194,14 @@ function handleNextButton() {
         displayQuestion();
     } else {
         displayScore();
-        stopStopwatch();
-        calcLeaderboardScore();
     }
     moveBar() // Calls the move bar function
 }
 
 // Calls the scoreboard
 function displayScore() {
+    stopStopwatch();
+    calcLeaderboardScore();
     removeQuestions();
     if (score <= 5) {
         questionElement.style.textAlign = 'center';;
