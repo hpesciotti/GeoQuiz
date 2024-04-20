@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 function enterPlayerName() {
     let playerName = document.getElementById("enter-player-name").value; // Get the value of the input field
     document.getElementById("player-name").innerText = "Player Name: " + playerName; // Display player name on the HTML page
+    window.localStorage.setItem("playerName", playerName);
     instructionsBox.style.display = "none";
     quizBox.style.display = "block";
     setGameQuestions(); //temporary
@@ -53,7 +54,8 @@ function stopStopwatch() {
 // Calculate the Final Score (LeaderboardScore) to be shown on the Leaderboard
 function calcLeaderboardScore() {
     let eslapseTimeMinutes = (elapsedTime/60000) 
-    leaderboardScore = Math.floor(((score * score) / (score / eslapseTimeMinutes))*10);
+    leaderboardScore = Math.floor(((score * score) + (score / eslapseTimeMinutes))*100); 
+    window.localStorage.setItem("leaderboardScore", leaderboardScore);
 }
 
 /**
@@ -203,7 +205,7 @@ function handleNextButton() {
 function displayScore() {
     stopStopwatch();
     calcLeaderboardScore();
-    removeQuestions();
+    removeQuestions(); 
     if (score <= 5) {
         questionElement.style.textAlign = 'center';;
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
