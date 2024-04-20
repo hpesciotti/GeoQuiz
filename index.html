@@ -31,43 +31,56 @@
     <main>
         <section id="question-container">
             <div id="quiz-section">
+                <!-- Instruction Box - Display the game instructions and guidelines -->
                 <div id="instructions-box">
-                    <h2 class="header-word-2"><i class="fa-regular fa-compass"></i> Instructions <i class="fa-solid fa-compass-drafting"></i></h2>
+                    <div id="instructions-container"></div>
+                    <h2 class="header-word-2"><i class="fa-regular fa-compass"></i> Instructions <i
+                            class="fa-solid fa-compass-drafting"></i></h2>
                     <ul>
-                        <li>To start playing, please enter your name and click 'Submit'.</li>
-                        <li>Answer each question by clicking on your chosen answer.</li>
-                        <li>Press the 'next' button to load the following question.</li>
-                        <li>You can check your total score at the end of the 10-question quiz.</li>
-                        <li>To restart the quiz, click on the log or refresh the page.</li>
-                        <li>You can also choose to play again at the end of the quiz.</li>
+                        <li class="instructions-list">1. To start playing, please enter your name and click 'Submit'.
+                        </li>
+                        <li class="instructions-list">2. Answer each question by clicking on your chosen answer.</li>
+                        <li class="instructions-list">3. Press the 'next' button to load the following question.</li>
+                        <li class="instructions-list">3. You can check your total score at the end of the 10-question
+                            quiz.</li>
+                        <li class="instructions-list">4. To restart the quiz, click on the log or refresh the page.</li>
+                        <li class="instructions-list">5. You can also choose to play again at the end of the quiz.</li>
                     </ul>
-                    <input type="text" maxlength="15" id="enter-player-name" placeholder="Player 1">
-                    <button onclick="enterPlayerName()">Submit</button>
-                </div>
-                <div id="quiz-box">
-                    <span>
-                        <h2 class="header-word-2"><i class="fa-solid fa-earth-americas"></i> Quiz <i
-                                class="fa-solid fa-earth-europe"></i></h2>
-                    </span>
-                    <div id="player-name"></div>
-                    <div id="score-box">
-                        <div id="score-counter">
-                            <span id="correct-counter"><i class="fa-regular fa-circle-check"></i> : 0</span>
-                            <span id="incorrect-counter"><i class="fa-regular fa-circle-xmark"></i> : 0</span>
+                    <div id="sign-in-container">
+                        <br>
+                        <h2 class="header-word-2"><i class="fa-solid fa-earth-asia"></i> Username <i class="fa-solid fa-earth-africa"></i></h2>
+                        <div id="sign-in-flex">
+                            <input type="text" maxlength="15" id="enter-player-name" placeholder="Player 1">
+                            <button class="btn-default" onclick="enterPlayerName()">Submit</button>
                         </div>
                     </div>
-                    <h3 id="question">Question placemark holder</h3>
-                    <div id="answer-buttons">
-                        <button class="btn-option">Answer 1</button>
-                        <button class="btn-option">Answer 2</button>
-                        <button class="btn-option">Answer 3</button>
-                        <button class="btn-option">Answer 4</button>
-                    </div>
-                    <button id="btn-next">Next</button>
-                    <div id="progress-bar">
-                        <div id="my-progress"></div>
+                </div>
+            </div>
+            <!-- Quiz Box - Questions are displayed here -->
+            <div id="quiz-box">
+                <span>
+                    <h2 class="header-word-2"><i class="fa-solid fa-earth-americas"></i> Quiz <i
+                            class="fa-solid fa-earth-europe"></i></h2>
+                </span>
+                <h3 id="player-name"></h3>
+                <div id="score-box">
+                    <div id="score-counter">
+                        <span id="correct-counter"><i class="fa-regular fa-circle-check"></i> : 0</span>
+                        <span id="incorrect-counter"><i class="fa-regular fa-circle-xmark"></i> : 0</span>
                     </div>
                 </div>
+                <h3 id="question">Question placemark holder</h3>
+                <div id="answer-buttons">
+                    <button class="btn-option">Answer 1</button>
+                    <button class="btn-option">Answer 2</button>
+                    <button class="btn-option">Answer 3</button>
+                    <button class="btn-option">Answer 4</button>
+                </div>
+                <button id="btn-next">Next</button>
+                <div id="progress-bar">
+                    <div id="my-progress"></div>
+                </div>
+            </div>
             </div>
             </div>
         </section>

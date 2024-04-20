@@ -18,6 +18,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let wrongScore = 0;
 
+// Fetches the question databank from the json file an assign them to the allQuestions variable
 document.addEventListener("DOMContentLoaded", (event) => {
     fetch("assets/data/questions.json")
         .then(res => res.json())
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 });
 
-// Inspired by Amy Richardson project
+// Inspired by Amy Richardson PP2 project
 function enterPlayerName() {
     let playerName = document.getElementById("enter-player-name").value; // Get the value of the input field
     document.getElementById("player-name").innerText = "Player Name: " + playerName; // Display player name on the HTML page

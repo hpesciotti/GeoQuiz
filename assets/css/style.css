@@ -32,7 +32,7 @@ header {
     top: 0;
     left: 0;
     padding: 1em;
-    position: fixed;
+    position: absolute;
     z-index: 5;
     width: 100%;
     background-color: transparent;
@@ -66,10 +66,81 @@ main {
     padding: 0
 }
 
+/* Instruction Box */
 
 #instructions-box {
     display: block;
 }
+
+#instructions-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions-list {
+    color: #20596c;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: balance;
+    padding: 0.15em 0.15em;
+}
+
+/* Sign in */
+#player-name {
+    color: #FAF9F6;
+    filter: drop-shadow(0 0 2px #33414e);
+    font-size: 1.2em;
+    font-weight: 450;
+    text-align: center;
+    margin: 0 0.6em 0;
+    padding: 0.15em 0.15em;
+}
+
+#sign-in-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.btn-default {
+    height: 2em;
+    width: 5.5em;
+    padding: 0.25em 0.15em 0.25em;
+    color: #f3f5ed;
+    background: #20596c;
+    border: 2px solid rgba(243, 245, 237, 90%);
+    border-radius: 0.3em;
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 0.3em auto 0.2em;
+    cursor: pointer;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-default:hover {
+    color: #20596c;
+    background: #f3f5ed;
+    border: 2px solid rgba(32, 89, 108, 90%);
+}
+
+#enter-player-name {
+    height: 2em;
+    background: #f3f5ed;
+    color: #20596c;
+    border-radius: 0.4em;
+    padding: 0.25em 0.15em 0.25em;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+/* Quiz Box */
 
 #quiz-box {
     display: none;
@@ -83,7 +154,7 @@ main {
     border-radius: 1em 1em;
     padding: 1em 1em;
     justify-content: center;
-    min-width: 75vw;
+    min-width: 60vw;
 }
 
 #question-section {
@@ -95,13 +166,15 @@ main h2 {
     text-align: center;
     font-size: 1.5em;
     padding: 0 0.3em 0.3em;
+    color: #20596c;
 }
 
 main h3 {
     font-weight: 450;
     font-size: 1.2em;
     text-align: justify;
-    padding:  0 0.3em 0.3em;
+    padding: 0 0.3em 0.3em;
+    color: #20596c;
 }
 
 #answer-buttons {
@@ -115,7 +188,7 @@ main h3 {
 .btn-option {
     width: 100%;
     padding: 0.4em 0.3em 0.4em;
-    color:#33414e;
+    color: #33414e;
     background: #f3f5ed;
     border: 2px solid rgba(51, 65, 78, 50%);
     border-radius: 0.3em;
@@ -124,7 +197,7 @@ main h3 {
     cursor: pointer;
 }
 
-/* Not disable stops the hover effect after the question is answered*/ 
+/* Not disable stops the hover effect after the question is answered*/
 .btn-option:hover:not([disabled]) {
     width: 100%;
     padding: 0.4em 0.3em 0.4em;
@@ -138,9 +211,9 @@ main h3 {
 }
 
 #btn-next {
-    width: 35%;
-    padding: 0.4em 0.3em 0.4em;
-    color:#20596c;
+    width: auto;
+    padding: 0.25em 0.15em 0.25em;
+    color: #20596c;
     background: #f7e2b7;
     border: 2px solid rgba(32, 89, 108, 90%);
     border-radius: 0.3em;
@@ -148,47 +221,48 @@ main h3 {
     font-weight: 800;
     margin: 0.3em auto 0.2em;
     cursor: pointer;
-    display: none; /* Changes with validateAnswer() */
+    display: none;
+    /* Changes with validateAnswer() */
 }
 
-/* Set styles from validateAnswer() */ 
+/* Set styles from validateAnswer() */
 .correct {
     background: #a4dbb1;
-    color:#2a494c;
+    color: #2a494c;
     border: 2px solid rgba(42, 73, 76, 90%);
     font-weight: 600;
 }
 
 .incorrect {
     background: #e2868e;
-    color:#95242d;
+    color: #95242d;
     border: 2px solid rgba(149, 36, 45, 90%);
     font-weight: 600;
 }
 
-/* Set styles from validateAnswer() */ 
-#score-box{
+/* Set styles from validateAnswer() */
+#score-box {
     display: none;
 }
 
-#score-counter{
+#score-counter {
     display: flex;
     flex-direction: row;
     gap: 2.5em;
     justify-content: center;
     align-items: center;
-    padding:  0 0.6em 0;
+    padding: 0 0.6em 0;
 }
 
 #correct-counter {
-    color:#e7f0e9;
+    color: #e7f0e9;
     filter: drop-shadow(0 0 2px #2a494c);
     font-weight: 500;
     font-size: 1.3rem;
 }
 
 #incorrect-counter {
-    color:#e7f0e9;
+    color: #e7f0e9;
     filter: drop-shadow(0 0 2px #95242d);
     font-weight: 500;
     font-size: 1.3rem;
@@ -201,10 +275,10 @@ main h3 {
     border-radius: 0.2em;
     width: 40%;
     height: 0.5rem;
-    background-color:  #f7e2b7;
+    background-color: #f7e2b7;
     display: block;
 }
-  
+
 #my-progress {
     width: 10%;
     height: 0.5rem;
@@ -233,4 +307,22 @@ footer {
     font-size: 30px;
     color: #20596c;
     list-style: none;
+}
+
+/* Media query: tablets and larger (400px and up) */
+@media screen and (min-width: 500px) {
+
+    /* Header */
+    header {
+        position: fixed;
+    }
+}
+
+/* Media query: tablets and larger (550px and up) */
+@media screen and (min-width: 500px) {
+    /* Quiz Box */
+    #question-container {
+        min-width: 35vw;
+    }
+
 }
