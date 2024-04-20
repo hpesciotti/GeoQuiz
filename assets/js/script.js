@@ -17,6 +17,9 @@ let currentQuestion;
 let currentQuestionIndex = 0;
 let score = 0;
 let wrongScore = 0;
+let startTime; // to keep track of the start time
+let elapsedTime = 0; // to keep track of the elapsed time while stopped
+let leaderboardScore = 0;
 
 // Fetches the question databank from the json file an assign them to the allQuestions variable
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -36,6 +39,20 @@ function enterPlayerName() {
     setGameQuestions(); //temporary
     setQuestionsOptions(); //temporary
     runQuiz(); //temporary
+}
+
+// The stopwatch is used as a variable that composes the calculus of the Final Score
+function startStopwatch() {
+    startTime = new Date().getTime();
+}
+
+function stopStopwatch() {
+    elapsedTime = new Date().getTime() - startTime;
+}
+
+// Calculate the Final Score (LeaderboardScore) to be shown on the Leaderboard
+function calcLeaderboardScore() {
+    leaderboardScore = Math.floor((score * 10000) / (elapsedTime / 1000));
 }
 
 /**
@@ -177,6 +194,8 @@ function handleNextButton() {
         displayQuestion();
     } else {
         displayScore();
+        stopStopwatch();
+        calcLeaderboardScore();
     }
     moveBar() // Calls the move bar function
 }
@@ -188,26 +207,30 @@ function displayScore() {
         questionElement.style.textAlign = 'center';;
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         Best luck next Time!`
-        
+
     } else if (score <= 6) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
-        That's very good!`
+        That's very good!<br>
+        Your final score is ${leaderboardScore}`
 
     } else if (score <= 7) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
-        You know your Geography!`
+        You know your Geography!<br>
+        Your final score is ${leaderboardScore}`
 
     } else if (score <= 9) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
-        That's impressive, you are a Geography savant!`
+        That's impressive, you are a Geography savant!<br>
+        Your final score is ${leaderboardScore}`
 
     } else {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scorded ${score} out of 10!<br>
-        You aced the GeoQuiz! You deserve a GeoKiss!`
+        You aced the GeoQuiz! You deserve a GeoKiss!<br>
+        Your final score is ${leaderboardScore}`
     };
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block"
@@ -221,4 +244,5 @@ function runQuiz() {
     wrongScore = 0;
     nextButton.innerHTML = "Next";
     displayQuestion();
+    startStopwatch();
 }
