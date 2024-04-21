@@ -402,8 +402,18 @@ footer {
 
     /* Quiz Box */
     .question-container {
-        max-width: 35vw;
+        max-width: 50vw;
         min-width: auto;
+    }
+
+}
+
+/* Media query: tablets and larger (1600px and up) */
+@media screen and (min-width: 1600px) {
+
+    /* Quiz Box */
+    .question-container {
+        max-width: 35vw;
     }
 
 }
