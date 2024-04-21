@@ -43,7 +43,6 @@ function enterPlayerName() {
     runQuiz(); //temporary
 }
 
-
 /** Leaderboards inspired by Deeksha Varma 
  * This function gets the variables playerName and leaderboardScore(final score) from local storage
  * creates an array lbScore of 5 objects (splice), sorted by leaderboardScore/score. 
@@ -81,8 +80,6 @@ function calcLeaderboardScore() {
     leaderboardScore = Math.floor(((score * score) + (score / eslapseTimeMinutes))*100); 
     window.localStorage.setItem("leaderboardScore", leaderboardScore); // add the varible leaderboardScore to the local storage for further use in addToleaderboard()
 }
-
-
 
 /**
  * This function generates the playable questions.
