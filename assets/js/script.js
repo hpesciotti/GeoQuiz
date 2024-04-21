@@ -254,7 +254,7 @@ function displayScore() {
     if (score <= 5) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
-        Best luck next Time!
+        Best luck next Time!<br>
         Your final score is ${leaderboardScore}`;
 
     } else if (score <= 6) {
