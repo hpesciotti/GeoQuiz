@@ -8,6 +8,9 @@ const instructionsBox = document.getElementById("instructions-box");
 const instructionsIdBox = document.getElementById("instructions-id")
 const quizBox = document.getElementById("quiz-box");
 const optionsPanel = document.getElementById("options-panel");
+const leaderboardSection = document.getElementById("leaderboard-section");
+const leaderboardList = document.getElementById("leaderboard-list");
+const leaderboardFinalBtn = document.getElementById("btn-final-leaderboard")
 
 let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 let allQuestions = [];
@@ -23,6 +26,7 @@ let wrongScore = 0;
 let startTime; // to keep track of the start time
 let elapsedTime = 0; // to keep track of the elapsed time while stopped
 let leaderboardScore = 0;
+let lbScore = "";
 
 // Fetches the question databank from the json file an assign them to the allQuestions variable
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -33,11 +37,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 });
 
+// Landing Menu - startquiz brings the user to next section enterPlayerName and instructions //
 function startQuiz() {
-    optionsPanel.style.display = "none"
-    instructionsIdBox.style.display = "block"
+    optionsPanel.style.display = "none";
+    instructionsIdBox.style.display = "block";
+    leaderboardSection.style.display = "none";
 }
 
+// Displays Leaderboard - Inspired by Deeksa Varma PP2 Project - iterate Leaderboard Array in local storage //
+function callLeaderboard() {
+    leaderboardSection.style.display = "block";
+    optionsPanel.style.display = "none";
+    leaderboardList.innerHTML = leaderboard.map(lbScore => {
+        return `<li class="instructions-list">${lbScore.username}........${lbScore.score}</li>`;
+    }).join('');
+}
 
 // Username inspired by Amy Richardson PP2 project
 function enterPlayerName() {
@@ -51,7 +65,7 @@ function enterPlayerName() {
     runQuiz(); //temporary
 }
 
-/** Leaderboards inspired by Deeksha Varma 
+/** Leaderboards inspired by Deeksa Varma PP2 Project
  * This function gets the variables playerName and leaderboardScore(final score) from local storage
  * creates an array lbScore of 5 objects (splice), sorted by leaderboardScore/score. 
  * It also pushes the lower scores from the array after the entry of higher scores.
@@ -268,8 +282,9 @@ function displayScore() {
         You aced the GeoQuiz! You deserve a GeoKiss!<br>
         Your final score is ${leaderboardScore}`
     };
-    nextButton.innerHTML = "Play Again";
+    nextButton.innerHTML = `<i class="fa-solid fa-circle-play"></i> Play Again`;
     nextButton.style.display = "block"
+    leaderboardFinalBtn.style.display = "block"
     scoreBox.style.display = 'none';
 }
 

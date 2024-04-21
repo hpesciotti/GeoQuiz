@@ -100,6 +100,11 @@ main {
     border: 2px solid rgba(247, 226, 183, 90%);
 }
 
+/* Leaderboard Section */
+#leaderboard-section {
+    display: none;
+}
+
 /* Instruction Box */
 #instructions-id {
     display: none;
@@ -243,6 +248,21 @@ main h3 {
 }
 
 #btn-next {
+    width: auto;
+    padding: 0.25em 2em 0.25em;
+    color: #20596c;
+    background: #f7e2b7;
+    border: 2px solid rgba(32, 89, 108, 90%);
+    border-radius: 0.3em;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0.3em auto 0.2em;
+    cursor: pointer;
+    display: none;
+    /* Changes with validateAnswer() */
+}
+
+#btn-final-leaderboard {
     width: auto;
     padding: 0.25em 2em 0.25em;
     color: #20596c;

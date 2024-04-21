@@ -38,10 +38,9 @@
                     <span class="instructions-list">A Geography Quiz for all ages and backgrounds</span>
                     <span class="instructions-list">Are you ready to try your geographical knowledge?</span>
                     <div id="options-container"></div>
-                    <button class="btn-option-panel" onclick="enterPlayerName()"> <i class="fa-solid fa-medal"></i>
+                    <button class="btn-option-panel" onclick="callLeaderboard()"> <i class="fa-solid fa-medal"></i>
                         Leaderboard</button>
-                    <button class="btn-option-panel" onclick="startQuiz()"> <i
-                            class="fa-solid fa-circle-play"></i>
+                    <button class="btn-option-panel" onclick="startQuiz()"> <i class="fa-solid fa-circle-play"></i>
                         Start Quiz</button>
                 </div>
             </div>
@@ -72,6 +71,14 @@
                     </div>
                 </div>
             </div>
+            <!-- Leaderboard Section -->
+            <div id="leaderboard-section">
+                <h2 class="header-word-2"><i class="fa-solid fa-award"></i> Leaderboard <i
+                        class="fa-solid fa-medal"></i></h2>
+                <ul id="leaderboard-list"></ul>
+                <button class="btn-option-panel" onclick="startQuiz()"> <i class="fa-solid fa-circle-play"></i>
+                    Start Quiz</button>
+            </div>
             </div>
             <!-- Quiz Box - Questions are displayed here -->
             <div id="quiz-box">
@@ -94,6 +101,8 @@
                     <button class="btn-option">Answer 4</button>
                 </div>
                 <button id="btn-next">Next</button>
+                <button id="btn-final-leaderboard" onclick="callLeaderboard()"> <i class="fa-solid fa-medal"></i>
+                    Leaderboard</button>
                 <div id="progress-bar">
                     <div id="my-progress"></div>
                 </div>
