@@ -68,7 +68,7 @@ main {
 
 /* Options Panel */
 #options-container {
-    display:block;
+    display: block;
 }
 
 #options-panel {
@@ -103,6 +103,14 @@ main {
 /* Leaderboard Section */
 #leaderboard-section {
     display: none;
+    align-items: center;
+}
+
+#leaderboard-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Instruction Box */
@@ -127,7 +135,7 @@ main {
 }
 
 /* Sign in */
-#player-name {
+.white-halo {
     color: #FAF9F6;
     filter: drop-shadow(0 0 2px #33414e);
     font-size: 1.2em;
@@ -262,6 +270,12 @@ main h3 {
     /* Changes with validateAnswer() */
 }
 
+#btn-next:hover {
+    color: #f7e2b7;
+    background: #20596c;
+    border: 2px solid rgba(247, 226, 183, 90%);
+}
+
 #btn-final-leaderboard {
     width: auto;
     padding: 0.25em 1.5em 0.25em;
@@ -275,6 +289,12 @@ main h3 {
     cursor: pointer;
     display: none;
     /* Changes with validateAnswer() */
+}
+
+#btn-final-leaderboard:hover {
+    color: #f7e2b7;
+    background: #20596c;
+    border: 2px solid rgba(247, 226, 183, 90%);
 }
 
 /* Set styles from validateAnswer() */
@@ -372,9 +392,11 @@ footer {
 
 /* Media query: tablets and larger (550px and up) */
 @media screen and (min-width: 500px) {
+
     /* Quiz Box */
     #question-container {
-        min-width: 35vw;
+        max-width: 35vw;
+        min-width: auto;
     }
 
 }

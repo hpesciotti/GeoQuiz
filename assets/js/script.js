@@ -50,7 +50,7 @@ function callLeaderboard() {
     optionsPanel.style.display = "none";
     quizBox.style.display = "none";
     leaderboardList.innerHTML = leaderboard.map(lbScore => {
-        return `<li class="instructions-list">${lbScore.username}........${lbScore.score}</li>`;
+        return `<li class="white-halo">${lbScore.username}........${lbScore.score}</li>`;
     }).join('');
 }
 
