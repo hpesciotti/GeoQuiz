@@ -366,7 +366,7 @@ main h3 {
     justify-content: center;
 }
 
-.btn-404 {
+#btn-404 {
     padding: 0.5em 0.5em 0.5em;
     color: #20596c;
     background: #f7e2b7;
