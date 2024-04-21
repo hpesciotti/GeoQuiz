@@ -61,9 +61,9 @@ function enterPlayerName() {
     window.localStorage.setItem("playerName", playerName); // add the varible playerName to the local storage for further use in addToleaderboard()
     instructionsIdBox.style.display = "none";
     quizBox.style.display = "block";
-    setGameQuestions(); //temporary
-    setQuestionsOptions(); //temporary
-    runQuiz(); //temporary
+    setGameQuestions(); //calls the game functions
+    setQuestionsOptions(); //calls the game functions
+    runQuiz(); //calls the game functions
 }
 
 /** Leaderboards inspired by Deeksa Varma PP2 Project
