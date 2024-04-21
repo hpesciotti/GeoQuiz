@@ -1,23 +1,22 @@
+// jshint esversion: 6
 // Set the variables based on elements in the html
 const questionElement = document.getElementById("question");
 const answersButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("btn-next");
 const optionsButtons = document.getElementsByClassName("btn-option");
 const scoreBox = document.getElementById("score-box");
-const instructionsBox = document.getElementById("instructions-box");
-const instructionsIdBox = document.getElementById("instructions-id")
+const instructionsIdBox = document.getElementById("instructions-id");
 const quizBox = document.getElementById("quiz-box");
 const optionsPanel = document.getElementById("options-panel");
 const leaderboardSection = document.getElementById("leaderboard-section");
 const leaderboardList = document.getElementById("leaderboard-list");
-const leaderboardFinalBtn = document.getElementById("btn-final-leaderboard")
+const leaderboardFinalBtn = document.getElementById("btn-final-leaderboard");
 
 let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 let allQuestions = [];
 // Defines an Array that will play the hole of questions databank in each game.
 let gameQuestions = [];
 // Defines an Array to used in the radomization of answer options.
-let questionOptions = [];
 let currentQuestion;
 // Scoreboard variables
 let currentQuestionIndex = 0;
@@ -26,7 +25,6 @@ let wrongScore = 0;
 let startTime; // to keep track of the start time
 let elapsedTime = 0; // to keep track of the elapsed time while stopped
 let leaderboardScore = 0;
-let lbScore = "";
 
 // Fetches the question databank from the json file an assign them to the allQuestions variable
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -99,7 +97,7 @@ function stopStopwatch() {
 
 // Calculate the Final Score (LeaderboardScore) to be shown on the Leaderboard
 function calcLeaderboardScore() {
-    let eslapseTimeMinutes = (elapsedTime/60000) 
+    let eslapseTimeMinutes = (elapsedTime/60000);
     leaderboardScore = Math.floor(((score * score) + (score / eslapseTimeMinutes))*100); 
     window.localStorage.setItem("leaderboardScore", leaderboardScore); // add the varible leaderboardScore to the local storage for further use in addToleaderboard()
 }
@@ -232,7 +230,7 @@ nextButton.addEventListener("click", () => {
         handleNextButton();
 
     } else {
-        location.reload() // Play Again
+        location.reload(); // Play Again
     }
 });
 
@@ -244,7 +242,7 @@ function handleNextButton() {
     } else {
         displayScore();
     }
-    moveBar() // Calls the move bar function
+    moveBar(); // Calls the move bar function
 }
 
 // Calls the scoreboard
@@ -254,38 +252,38 @@ function displayScore() {
     addToleaderboard();
     removeQuestions(); 
     if (score <= 5) {
-        questionElement.style.textAlign = 'center';;
+        questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         Best luck next Time!
-        Your final score is ${leaderboardScore}`
+        Your final score is ${leaderboardScore}`;
 
     } else if (score <= 6) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's very good!<br>
-        Your final score is ${leaderboardScore}`
+        Your final score is ${leaderboardScore}`;
 
     } else if (score <= 7) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         You know your Geography!<br>
-        Your final score is ${leaderboardScore}`
+        Your final score is ${leaderboardScore}`;
 
     } else if (score <= 9) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
         That's impressive, you are a Geography savant!<br>
-        Your final score is ${leaderboardScore}`
+        Your final score is ${leaderboardScore}`;
 
     } else {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scorded ${score} out of 10!<br>
         You aced the GeoQuiz! You deserve a GeoKiss!<br>
-        Your final score is ${leaderboardScore}`
-    };
+        Your final score is ${leaderboardScore}`;
+    }
     nextButton.innerHTML = `<i class="fa-solid fa-circle-play"></i> Play Again`;
-    nextButton.style.display = "block"
-    leaderboardFinalBtn.style.display = "block"
+    nextButton.style.display = "block";
+    leaderboardFinalBtn.style.display = "block";
     scoreBox.style.display = 'none';
 }
 
