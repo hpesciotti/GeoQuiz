@@ -358,11 +358,31 @@ main h3 {
     background-color: rgba(32, 89, 108);
 }
 
+/* 404 */
 #page-not-found {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.btn-404 {
+    padding: 0.5em 0.5em 0.5em;
+    color: #20596c;
+    background: #f7e2b7;
+    border: 2px solid rgba(32, 89, 108, 90%);
+    border-radius: 0.3em;
+    font-size: 1.25em;
+    font-weight: 900;
+    margin: 0.3em auto 0.2em;
+    justify-content: center;
+    align-self: center;
+}
+
+#btn-404:hover {
+    color: #f7e2b7;
+    background: #20596c;
+    border: 2px solid rgba(247, 226, 183, 90%);
 }
 
 /* Footer */
