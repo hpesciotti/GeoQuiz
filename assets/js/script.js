@@ -228,6 +228,7 @@ function handleNextButton() {
 function displayScore() {
     stopStopwatch();
     calcLeaderboardScore();
+    addToleaderboard();
     removeQuestions(); 
     if (score <= 5) {
         questionElement.style.textAlign = 'center';;
