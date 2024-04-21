@@ -358,6 +358,13 @@ main h3 {
     background-color: rgba(32, 89, 108);
 }
 
+#page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Footer */
 footer {
     background-color: #f7e2b7;
