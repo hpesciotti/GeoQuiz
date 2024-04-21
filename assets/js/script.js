@@ -5,7 +5,9 @@ const nextButton = document.getElementById("btn-next");
 const optionsButtons = document.getElementsByClassName("btn-option");
 const scoreBox = document.getElementById("score-box");
 const instructionsBox = document.getElementById("instructions-box");
+const instructionsIdBox = document.getElementById("instructions-id")
 const quizBox = document.getElementById("quiz-box");
+const optionsPanel = document.getElementById("options-panel");
 
 let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 let allQuestions = [];
@@ -31,12 +33,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 });
 
+function startQuiz() {
+    optionsPanel.style.display = "none"
+    instructionsIdBox.style.display = "block"
+}
+
+
 // Username inspired by Amy Richardson PP2 project
 function enterPlayerName() {
     let playerName = document.getElementById("enter-player-name").value; // Get the value of the input field
     document.getElementById("player-name").innerText = "Player Name: " + playerName; // Display player name on the HTML page
     window.localStorage.setItem("playerName", playerName); // add the varible playerName to the local storage for further use in addToleaderboard()
-    instructionsBox.style.display = "none";
+    instructionsIdBox.style.display = "none";
     quizBox.style.display = "block";
     setGameQuestions(); //temporary
     setQuestionsOptions(); //temporary

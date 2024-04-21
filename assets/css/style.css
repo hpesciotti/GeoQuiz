@@ -66,10 +66,43 @@ main {
     padding: 0
 }
 
-/* Instruction Box */
+/* Options Panel */
+#options-container {
+    display:block;
+}
 
-#instructions-box {
-    display: block;
+#options-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65em;
+}
+
+.btn-option-panel {
+    width: 12em;
+    padding: 0.5em 0.5em 0.5em;
+    color: #20596c;
+    background: #f7e2b7;
+    border: 2px solid rgba(32, 89, 108, 90%);
+    border-radius: 0.3em;
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 0.3em auto 0.2em;
+    cursor: pointer;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-option-panel:hover {
+    color: #f7e2b7;
+    background: #20596c;
+    border: 2px solid rgba(247, 226, 183, 90%);
+}
+
+/* Instruction Box */
+#instructions-id {
+    display: none;
 }
 
 #instructions-box {
@@ -106,9 +139,9 @@ main {
 }
 
 .btn-default {
-    height: 2em;
+    height: 2.3em;
     width: 5.5em;
-    padding: 0.25em 0.15em 0.25em;
+    padding: 0.25em;
     color: #f3f5ed;
     background: #20596c;
     border: 2px solid rgba(243, 245, 237, 90%);
@@ -128,7 +161,7 @@ main {
 }
 
 #enter-player-name {
-    height: 2em;
+    height: 2.3em;
     background: #f3f5ed;
     color: #20596c;
     border-radius: 0.4em;
@@ -141,7 +174,6 @@ main {
 }
 
 /* Quiz Box */
-
 #quiz-box {
     display: none;
 }
@@ -212,7 +244,7 @@ main h3 {
 
 #btn-next {
     width: auto;
-    padding: 0.25em 0.15em 0.25em;
+    padding: 0.25em 2em 0.25em;
     color: #20596c;
     background: #f7e2b7;
     border: 2px solid rgba(32, 89, 108, 90%);
