@@ -7,6 +7,7 @@ const scoreBox = document.getElementById("score-box");
 const instructionsBox = document.getElementById("instructions-box");
 const quizBox = document.getElementById("quiz-box");
 
+let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 let allQuestions = [];
 // Defines an Array that will play the hole of questions databank in each game.
 let gameQuestions = [];
@@ -30,16 +31,39 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 });
 
-// Inspired by Amy Richardson PP2 project
+// Username inspired by Amy Richardson PP2 project
 function enterPlayerName() {
     let playerName = document.getElementById("enter-player-name").value; // Get the value of the input field
     document.getElementById("player-name").innerText = "Player Name: " + playerName; // Display player name on the HTML page
-    window.localStorage.setItem("playerName", playerName);
+    window.localStorage.setItem("playerName", playerName); // add the varible playerName to the local storage for further use in addToleaderboard()
     instructionsBox.style.display = "none";
     quizBox.style.display = "block";
     setGameQuestions(); //temporary
     setQuestionsOptions(); //temporary
     runQuiz(); //temporary
+}
+
+
+/** Leaderboards inspired by Deeksha Varma 
+ * This function gets the variables playerName and leaderboardScore(final score) from local storage
+ * creates an array lbScore of 5 objects (splice), sorted by leaderboardScore/score. 
+ * It also pushes the lower scores from the array after the entry of higher scores.
+*/
+function addToleaderboard() {
+    let lbScore = {
+        score: localStorage.getItem("leaderboardScore"),
+        username: localStorage.getItem("playerName")
+    };
+
+    leaderboard.push(lbScore);
+
+    leaderboard.sort((a,b) => {
+        return b.score - a.score;
+    });
+
+    leaderboard.splice(5);
+
+    localStorage.setItem("leaderboard", JSON.stringify(leaderboard)); 
 }
 
 // The stopwatch is used as a variable that composes the calculus of the Final Score
@@ -55,8 +79,10 @@ function stopStopwatch() {
 function calcLeaderboardScore() {
     let eslapseTimeMinutes = (elapsedTime/60000) 
     leaderboardScore = Math.floor(((score * score) + (score / eslapseTimeMinutes))*100); 
-    window.localStorage.setItem("leaderboardScore", leaderboardScore);
+    window.localStorage.setItem("leaderboardScore", leaderboardScore); // add the varible leaderboardScore to the local storage for further use in addToleaderboard()
 }
+
+
 
 /**
  * This function generates the playable questions.
