@@ -48,6 +48,7 @@ function startQuiz() {
 function callLeaderboard() {
     leaderboardSection.style.display = "block";
     optionsPanel.style.display = "none";
+    quizBox.style.display = "none";
     leaderboardList.innerHTML = leaderboard.map(lbScore => {
         return `<li class="instructions-list">${lbScore.username}........${lbScore.score}</li>`;
     }).join('');
