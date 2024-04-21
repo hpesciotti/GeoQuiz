@@ -1,4 +1,3 @@
-// jshint esversion: 6
 // Set the variables based on elements in the html
 const questionElement = document.getElementById("question");
 const answersButtons = document.getElementById("answer-buttons");

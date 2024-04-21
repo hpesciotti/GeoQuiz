@@ -191,7 +191,7 @@ main {
     display: none;
 }
 
-#question-container {
+.question-container {
     background: rgba(218, 245, 236, 70%);
     flex-direction: column;
     margin: 10em 1em 3em;
@@ -394,7 +394,7 @@ footer {
 @media screen and (min-width: 500px) {
 
     /* Quiz Box */
-    #question-container {
+    .question-container {
         max-width: 35vw;
         min-width: auto;
     }
