@@ -1,8 +1,8 @@
 # GeoQuiz | a Geography Quiz for all ages and backgrounds
 
-![Felipe Giubilei Photography's website displayed on various devices](docs/documentation/am-i-responsive-fgiubilei.png)
+![GeoQuiz displayed on various devices](docs/documentation/am-i-responsive.png)
 
-[Visit my website here](https://hpesciotti.github.io/FGiubilei/index.html)
+[Visit PP2 website here](https://hpesciotti.github.io/GeoQuiz/index.html)
 
 
 ## CONTENTS  
@@ -35,7 +35,7 @@
 
     5.1. [Further Testing](#51-futher-testing)
 
-    5.2. [Bugs and Fixe](#52-bugs--fixes)
+    5.2. [Bugs and Fixes](#52-bugs--fixes)
 
     5.3. [Unsolved Bugs](#53-unsolved-bugs)
 
@@ -58,7 +58,7 @@ On a personal note, in the search for the ideal theme to build my first website,
 
 Therefore, I thought about the work of my dear cousin Felipe Giubilei, an accomplished photographer. To my surprise, his work needs a landing page. Thus, besides having a solid theme for my PP1 with excellent visual appeal given by his photos, I can soon grace him with a fully functional website.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ## **2. UX Design**
 
@@ -86,7 +86,7 @@ Some of the photographer's pages I researched were selected by [Webcitz](https:/
 
 - [WeShootFood](https://www.weshootfood.net/)
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **2.2. User Stories**
 
@@ -104,7 +104,7 @@ Some of the photographer's pages I researched were selected by [Webcitz](https:/
 -   I want to book a session with the photographer.
 -   I want to see new additions to the portfolio.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **2.3. Wireframes**
 
@@ -130,7 +130,7 @@ I created the initial website wireframes in MS PowerPoint, which I was most fami
 
 -   [Contact](docs/documentation/wireframes-contact-mobile.png)
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **2.4. Design**
 
@@ -144,7 +144,7 @@ I used authorial photos, so I had to select images from the photographer's portf
 -   Urban Photography, and,
 -   Weddings.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Colour Scheme**
 
@@ -154,13 +154,13 @@ The colour scheme is inspired by tones of violet, indigo, and spotlights, as see
 
 The selection of text and background took into consideration the contrast ratio of at least Level AA. [EightShape contrast grid](docs/documentation/contrast-grid.png) is present in the documentation. 
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Typography**
 
 I employed three different fonts for the website design. The logo features the Bauhaus 93 font, which is not included in the style.css file as it was utilized in another software to create the logo image. The other two fonts, Inter and Rubik, are sourced from Google Fonts. Rubik font is applied to the navigation bar, while Inter is used in the rest of the website's sections, such as textual elements.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ## **3. Features**
 
@@ -187,7 +187,7 @@ I accomplished this design based on the Love Running Project.
 
 - The navigation bar's background has a degradé effect that changes from a three-colour gradient on the desktop/tablet version to a two-colour gradient on the mobile version. This choice was simply made by aesthetics. I drew inspiration from a degradé background from [ESRI Ireland's website](https://www.esri-ireland.ie/en-ie/homehttps://www.esri-ireland.ie/en-ie/home). The background css querry was obtainded through [CSS Gradient's website](https://cssgradient.io/).
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ##### **Hero Section**
 
@@ -203,97 +203,7 @@ I accomplished this design based on the Love Running Project.
 
 - There's also a "call to action" box that quickly informs the user of the website's main goal. This element was a source of a couple of errors due to its responsivity. The box was bleeding the Hero Section on smaller screens, which prompted me to change the hero image to a relative measure. In this case, I've used "em" unit for the length of the hero image.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-##### **Polaroid Section**
-
-![Polaroid Section](docs/documentation/polaroid-section.png)
-
-- The Polaroid section was designed when drawing up the wireframes. This element provides the user with information about the photographer's capabilities and professional background, as well as where he's based, via image and text. 
-
-- The [Coders' Guidebook website](https://codersguidebook.com/how-to-build-a-website/how-to-add-polaroid-images-to-a-website) inspired this section. 
-
-- In the mobile version, the Polaroid boxes stack up, taking up a large part of the device's width. The tablet version, depending on the screen's width, resembles either the desktop version or the mobile version.
-
-![Polaroid Mobile and Tablet](docs/documentation/polaroid-section-mobile.png)
-
-- I added box-shadow and hover transform scale on large screens for better user interactivity.
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-##### **Footer Section**
-
-I decided on a minimalistic footer element that contains a call to action for promoting social media. Font Awesome icons link the anchor element to the photographer's social media pages. Responsivity was used in this section, aligning call to action text and social media icons in the desktop/tablet version and stacking the text on top of the latter in the mobile versions. Desktop version also features a transform tex-size while hovering the social media icons.
-
-![Footer Mobile](docs/documentation/footer-element-mobile.png)
-
-![Footer Desktop](docs/documentation/footer-element-desktop.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-#### **About Page**
-
-##### **About Section**
-
-About is comprised of a div with as child elements a picture of the photographer, with a border radius of 50% so it appears as a circle (inspired by Love Running Project), and the text with a description of Felipe's career. The elements are contained by a gradient border that matches the website's visual identity, which is, in fact, another box with a slightly bigger size than a white background box. The responsivity in this element makes the picture be located above the text in mobile versions (flex column) and aligned to text in large screens (flex row).
-
-![About Section: Mobile and Desktop](docs/documentation/about.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-##### **Partner Section**
-
-The Partners section has been designed to contain the logos, as well as the anchor links to access their respective websites. I've added the border-radius 50% property to display them as circles. There is also a background image to add visual appeal to this element. 
-
-I added responsiveness to both the background, which in the large screen version takes up the entire width of the screen, while in the mobile version, this element becomes a box with rounded edges. 
-
-The logos are stacked in the mobile version and remain in a single line for screens with a resolution higher than 768px. Finally, I added a hover scale and box shadow effect to the desktop version.
-
-![Partners](docs/documentation/partners.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-#### **Gallery Page**
-
-I've implemented thumbnails on the gallery page in the format of polaroid boxes already used for each themed gallery. Similar to other responsive elements, the images are stacked in the mobile version, while in the large-screen versions, they are grouped in rows. In the desktop version, interactivity is via the transform scale effect by hovering the mouse.
-
-![Gallery Mobile](docs/documentation/gallery-mobille.png)
-
-![Gallery Desktop](docs/documentation/gallery-desktop.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-##### **Gallery-Themed Pages**
-
-The thematic gallery pages followed similar patterns to those implemented in the Love Running Project. The choice of several galleries proved to be a good option in terms of performance.
-
-![Gallery Thematic](docs/documentation/gallery-theme-pages.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-#### **Contact Page**
-
-##### **Contact Form**
-
-The form section consists of a simple form with a name, subject, e-mail and message field. Insert place holder text in order to engage the user more when filling in the form. In addition, there is a background image to contribute to the aesthetics of the site.
-
-At first, I used the POST email action to redirect the messages directly to the email, but the redirection occurred via MS Outlook or similar software. I found this solution to be inelegant.
-
-I then migrated the form to the FormSubmit online service, which, although functional, did not have a "Thank you for entering in contact" page. In addition, the third-party service had high latency. 
-
-Finally, guided by my mentor and my cohort facilitator, I changed the POST action to a URL action, which takes the user to a "Thank you for entering in contact" page.
-
-![Form Section](docs/documentation/form-contact.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
-
-#### **Thank You Page**
-
-The "Thank you" page will appear after you have filled in the contact form. Its purpose is to confirm that the message sent by the user has been sent. The page has a meta tag which, at some point, redirects the user to the landing page.
-
-![Thank You page](docs/documentation/thank-you-page.png)
-
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top]((https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Error 404 Page**
 
@@ -301,7 +211,7 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 ![Error 404](docs/documentation/error-404.png)
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **3.2. Future Features**
 
@@ -313,7 +223,7 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 - An option to acquire/download the website photos.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ## **4. Technologies Used**
 
@@ -322,6 +232,8 @@ This is a conventional 404 error page, with text explaining that a link is missi
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### **4.2 - Frameworks, Libraries, Technologies & Programs Used**  
 
@@ -335,17 +247,13 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 - Font Awesome: icons and their associated kit were downloaded from here  
 
-- MS Power Point: used to create wireframes
+- Balsamic: used to create wireframes
 
-- MS Excel: to concatenate img querrys
-
-- ArcGIS: used to create site logo 
+- [Adobe Firefly AI Image Generator](https://firefly.adobe.com/): used to create application background image
 
 - Favicon.io: for ice cream favicon  
 
-- Tiny PNG: to compress images
-
-- JPG to WEBP | CloudConvert: to convert jpg to webp and further compressing
+- [Tiny PNG](https://tinypng.com/): to compress images
 
 - ChatGPT:  for improving and making text content more engaging
 
@@ -355,22 +263,28 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 - Google Lighthouse: for auditing the performance of the website
 
-- W3C Validator: for validating the HTML and CSS code 
+- [W3C Validator](https://validator.w3.org/#validate_by_input): for validating HTML code 
+
+- [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): for validating CSS code 
+
+- [JSHint Validator](https://jshint.com/): for validating JavaScript code
+
+- [Am I responsive](https://ui.dev/amiresponsive): check responsivity of websites
 
 - MS Paint: for editing the captured screenshots
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ## **5. Testing**
 
 - Daily testing during the code stage was conducted through Google Chrome's DevTools. 
 
-- Moreover, futher testing was executed through real-world devices, laptopts Mac and Windows and Apple Mobiles (Iphone 12 mini, Iphone X, Iphone 14). 
+- Moreover, futher testing was executed through real-world devices, laptopts (Windows) and Apple Mobiles (Iphone 12 mini, Iphone X, Iphone 14). 
 The browsers used were:  
-    - Chrome  
+    - Chrome (only Desktop)
     - Firefox  
     - Edge (only Desktop)
-    - Safari  
+    - Safari (only Mobile)
 
 ### **5.1. Futher Testing**
 
@@ -399,13 +313,13 @@ I opted to change the post method redirecting to Code Institute dump page to a U
 |	[Gallery-Weddings](https://hpesciotti.github.io/FGiubilei/gallery-weddings.html)	|	No erros/warnings	|	[W3 validator Gallery-Weddings](docs/documentation/w3-checker-gallery-weddings.png)	|
 |	[Gallery-Institutional Events](https://hpesciotti.github.io/FGiubilei/gallery-i-events.html)	|	No erros/warnings	|	[W3 validator Gallery-Institutional Events](docs/documentation/w3-checker-gallery-i-events.png)	|
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **CSS Validation using W3C Validation** 
 
 ![W3 Css.Style](docs/documentation/w3-css.png)
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Performance Lighthouse**
 
@@ -445,7 +359,10 @@ Page	|	Score	|	Screenshots
 |	[Gallery-Weddings](https://hpesciotti.github.io/FGiubilei/gallery-weddings.html)	|	81	|	[W3 validator Gallery-Weddings](docs/documentation/w3-checker-gallery-weddings-mobile.png)
 |	[Gallery-Institutional Events](https://hpesciotti.github.io/FGiubilei/gallery-i-events.html)	|	77	|	[W3 validator Gallery-Institutional Events](docs/documentation/w3-checker-gallery-i-events-mobile.png)
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
+
+##### **JSHint Validator**
+
 
 ### **5.2. Bugs & Fixes** 
 
@@ -457,7 +374,7 @@ Page	|	Score	|	Screenshots
 |	Contact Form was not aligned to left corner of the page in iPad Air	|	Add a media querry for 800px	|	[Bug](docs/documentation/error-3-issue-left-form.png) / [Fix](docs/documentation/error-3-solution-left-form.png)
 |	Performance Issues due to high resolution photos in jpg format	|	Resize and compact images and transform JPG to WEBP by CloudConvert. <br>The image had been compacted once via Tiny Png, but it was needed further compression.	|	[Bug](docs/documentation/error-4-heavy-images)
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **5.3. Unsolved Bugs** 
 
@@ -467,7 +384,7 @@ Page	|	Score	|	Screenshots
 
 - Another error, already mentioned before, was diagnosed by the W3C validator as a bad value URL attribute method on the element form on the contact page. 
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ## **6. Deployment**
 
@@ -485,7 +402,7 @@ V. Under "Source", click on the dropdown item called "None", select "Master", an
 VI. The page will automatically refresh.
 VII. Now you should see a notification message that provides the now published site link: “Your site is ready to be published at [https://hpesciotti.github.io/FGiubilei/](https://hpesciotti.github.io/FGiubilei/)”.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **6.2. Forking the GitHub Repository**
 
@@ -497,7 +414,7 @@ III. At the top right of the Repository, just below your profile picture, find t
 IV. You should now have a copy of the original repository in your GitHub account.
 V. Changes made to the forked repository can be merged with the original repository via a pull request.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **6.3. Making a Local Clone**
 
@@ -530,50 +447,52 @@ Changes made on the local machine (cloned repository) can be pushed to the upstr
 
 [Click Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) for a more comprehensive guide on how to complete the above process.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ## **7. Credits**
 
 ### **7.1. Content**
 
-- [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp): for hover transform scale and font-size effect and flex-box rules.
+- Code Institute - Love Maths projects: add event listener with the argument of loaded DOM as trigger to fecth questions.
 
-- [Code Institute](https://codeinstitute.net/ie/): Love Running Project, various implemented contents, such as: hero section, gallery, footer, and form section.
+- [W3Schools](https://www.w3schools.com/howto/howto_js_progressbar.asp): for the tutorial on progress bars.
 
-- [CSS Gradient's website](https://cssgradient.io/): for the gradient/degradé effect on the nav bar.
+- [W3Schools](https://www.w3schools.com/js/js_dates.asp): for date objects, used on the stop watch variable in the final score.
 
-- [Coders' Guidebook website](https://codersguidebook.com/how-to-build-a-website/how-to-add-polaroid-images-to-a-website): for the porlaroid section.
+- [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array): helped me how to shuffle an array.
 
-- [ESRI Ireland's website](https://www.esri-ireland.ie/en-ie/homehttps://www.esri-ireland.ie/en-ie/home): influencedn on the chosen appearance of my website's nav bar.
+- [Stack Overflow](https://stackoverflow.com/questions/52763765/push-3-random-names-into-a-new-array): helped me how to shuffle values of objects in an array.
 
-- [Shane Doyle/spacefruit](https://github.com/ShaneDoyleDev/spacefruit): for README structure and Markdown guidance.
+- [GreatStack's video tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)help me set the basic structure for assembling the quiz app.
 
-- [Alice Hillier/rainforest-cafe](https://github.com/alicehillier/rainforest-cafe): for README structure and Markdown guidance.
+- [Kevin Flanagan](https://github.com/KevinFlanagan7/Masters-quiz): for fetch a json file, used in the question databank.
 
-- [Amy Richardson/scoops](https://amylour.github.io/scoops_pp1): for README structure and Markdown guidance.
+- [Deeksa Varma](https://github.com/deeksha-varma/portfolio_project_2): same project in nature helped significantly with implementing the leaderboard.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+- [Amy Richardson/scoops](https://github.com/amylour/irish_wildlife_matchup): for usarname section.
+
+- [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA): help put together the displayQuestion function, and I took some inspiration from him regarding the fonts and css effects.
+
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **7.2. Media**
 
-- All the images used in the website were kindly provided by [Felipe Giubilei](https://www.flickr.com/photos/felipegfotografia/page9)
+- [Adobe Firefly AI Image Generator](https://firefly.adobe.com/): used to create application background image
 
-- [Font Awesome](https://fontawesome.com/): for the icons used in the footer of this site.
+- [Font Awesome](https://fontawesome.com/): for the icons used in the footer of the application.
 
-- [Favicon](https://favicon.io/): for the favicon used for this site.
+- [Favicon](https://favicon.io/): for the favicon used for the application.
 
 ### **7.3. Acknowlegements**
-
-- My cousin, [Felipe Giubilei](https://www.instagram.com/felipegiubilei/), for provinding his beatiful pictures.
 
 - My mentor, [Darío Carrasquel](https://github.com/jeetkunecoder/jeetkunecoder), for his support and constructive feedback.
 
 - My informal mentor and great friend, [Bruno Dias](https://github.com/brunoald/), for his helpful and supportive advice.
 
-- My cohort facilitator, [Amy Richardson](https://github.com/amylour/amylour), for being always helpful and testing the website. 
+- My cohort facilitator, [Amy Richardson](https://github.com/amylour/amylour), for indicating Adobe Firefly AI Image Generator, which essentially helped me set the tone for the application's appearance. 
 
-- My partner, Joana, and my sister, Patrícia, for testing the website.
+- My partner, Joana, and my sister, Patrícia, for testing the application.
 
-[Back to top](https://github.com/hpesciotti/FGiubilei/?tab=readme-ov-file#felipe-giubilei-photography)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 

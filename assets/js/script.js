@@ -25,7 +25,7 @@ let startTime; // to keep track of the start time
 let elapsedTime = 0; // to keep track of the elapsed time while stopped
 let leaderboardScore = 0;
 
-// Fetches the question databank from the json file an assign them to the allQuestions variable
+// Fetches the question databank from the json file an assign them to the allQuestions variable, inspired by KevinFlanagan PP2 Project
 document.addEventListener("DOMContentLoaded", (event) => {
     fetch("assets/data/questions.json")
         .then(res => res.json())
