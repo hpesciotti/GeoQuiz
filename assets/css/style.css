@@ -107,7 +107,7 @@ main {
 }
 
 #leaderboard-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -408,32 +408,39 @@ footer {
     list-style: none;
 }
 
-/* Media query: tablets and larger (400px and up) */
+/* Media query: Galaxy Fold (<350px) */
+@media screen and (max-width: 350px) {
+
+    #enter-player-name {
+        width: 9rem;
+    }
+}
+
+/* Media query: Surface duo (500px and up) */
 @media screen and (min-width: 500px) {
 
     /* Header */
     header {
         position: fixed;
     }
-}
-
-/* Media query: tablets and larger (550px and up) */
-@media screen and (min-width: 500px) {
 
     /* Quiz Box */
     .question-container {
-        max-width: 50vw;
+        max-width: 70vw;
+    }
+}
+
+/* Media query: laptops and larger (1280px and up) */
+@media screen and (min-width: 1280px) {
+
+    /* General Styles */
+    body {
+        font-size: 22px;
+    }
+
+    /* Quiz Box */
+    .question-container {
+        max-width: 40vw;
         min-width: auto;
     }
-
-}
-
-/* Media query: tablets and larger (1600px and up) */
-@media screen and (min-width: 1600px) {
-
-    /* Quiz Box */
-    .question-container {
-        max-width: 35vw;
-    }
-
 }
