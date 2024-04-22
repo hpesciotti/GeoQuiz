@@ -72,7 +72,7 @@ During my research, I came across websites that listed questions on a single pag
 
 As a personal note, while analyzing the Geography for Kids project code, I noticed it was complex compared to the other app samples. Through a search on GitHub, I confirm that a person with a good background in the field developed it, which contrasts with my background of almost no coding experience before enrolling in Code Institute's course. The complexity ultimately led me to intensify my immersion in JavaScript and improve my skills.
 
-The app is aimed at people of all ages and backgrounds, but it's best suited to people who have already completed elementary school. It also aims to create a playful and colourful environment that introduces the user to the main themes of geography, such as Geopolitics, Climatology, Landforms, and Biogeography. 
+The app is aimed at people of all ages and backgrounds, but it's best suited to people who have already completed elementary school. It also aims to create a ludic playful and colourful environment that introduces the user to the main themes of geography, such as Geopolitics, Climatology, Landforms, and Biogeography. 
 
 Responsibility is essential for the app as it allows users to access the quiz from various devices. Finally, the high score/leaderboard system gives greater engagement by generating competition between friends and potential users. 
 
@@ -89,44 +89,45 @@ Responsibility is essential for the app as it allows users to access the quiz fr
 ### **2.2. User Stories**
 
 #### **First Time Visitor Goals**
--   I want to acquaint myself with the photographer's portfolio.
--   I want to understand the types of photoshoots the photographer can undertake.
--   I want to quickly find what I'm looking for, without extensive reading or following numerous links.
+- I want to navigate through the pages easily and have a good user interface.
+- I want to feel challenged and amazed by the quiz.
+- I want to get my score in an easy-to-read format.
 
 #### **Returning Visitor Goals**
--   I want to learn about the photographer's qualifications.
--   I want to discover how to contact the photographer.
--   I want to easily find social media links.
+- I want to check the leaderboard.
+- I want to get different questions (randomized shuffle of the data bank).
 
 #### **Frequent User Goals**
--   I want to book a session with the photographer.
--   I want to see new additions to the portfolio.
+- I want to set a highscore, compete for number 1 in the leaderboard.
+- I want to get to answer different questions.
+- I want to see new features.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ### **2.3. Wireframes**
 
-I created the initial website wireframes in MS PowerPoint, which I was most familiar with. At this stage in the project development, I hadn't decided on the colour scheme yet, so I experimented with the design and layout of the main pages/features.
+I generated the preliminary website wireframes utilizing Balsamiq. I had yet to finalize the colour scheme at this stage of the project's conception. Therefore, I focused solely on establishing the foundational elements of features and application flow.
 
-#### **Desktop Version**
+In this sense, I have identified three essential stages for the app to meet the user stories requirements, which I have appointed as: 
+- intro - "landing page" with the instructions and a form section to get the player name.
+- game - the section of the game in which the questions and answer options would be displayed.
+- score - showing how many questions were answered correctly and accompanied by a message that would reflect the score and an option to pay for the game again.
 
--   [Index](docs/documentation/wireframes-index-pc.png)
+#### **Desktop/Laptop/Tablet Version**
 
--   [Gallery](docs/documentation/wireframes-gallery-pc.png)
+-   [Intro](docs/documentation/wireframe-balsamic-geoquiz-intro-page-larger-screens.jpg)
 
--   [About](docs/documentation/wireframes-about-pc.png)
+-   [Game](docs/documentation/wireframe-balsamic-geoquiz-game-page-larger-screens.jpg)
 
--   [Contact](docs/documentation/wireframes-contact-pc.png)
+-   [Score](docs/documentation/wireframe-balsamic-geoquiz-score-page-larger-screens.jpg)
 
 #### **Mobile Version**
 
--   [Index](docs/documentation/wireframes-index-mobile.png)
+-   [Intro](docs/documentation/wireframe-balsamic-geoquiz-intro-page-mobile.jpg)
 
--   [Gallery](docs/documentation/wireframes-gallery-mobile.png)
+-   [Game](docs/documentation/wireframe-balsamic-geoquiz-game-page-mobile.jpg)
 
--   [About](docs/documentation/wireframes-about-mobile.png)
-
--   [Contact](docs/documentation/wireframes-contact-mobile.png)
+-   [Score](docs/documentation/wireframe-balsamic-geoquiz-score-page-mobile.jpg)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
