@@ -208,13 +208,10 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 ### **3.2. Future Features**
 
-- I intend to add a fully functional form that is able to store messages on a server.
+- I intend to add a leaderboard that would store top 100 scores and show the top 5. 
+The data would be store in a server, instead of the local storage.
 
-- To employ numbered pages on the gallery-themed pages to improve performance.
-
-- A functionality that could enlarge the selected picture on the gallery to full page.
-
-- An option to acquire/download the website photos.
+- To employ difficult levels and questions that would reflect that.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
