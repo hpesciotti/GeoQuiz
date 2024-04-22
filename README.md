@@ -2,7 +2,7 @@
 
 ![GeoQuiz displayed on various devices](docs/documentation/am-i-responsive.png)
 
-[Visit PP2 website here](https://hpesciotti.github.io/GeoQuiz/index.html)
+[Visit my PP2 website here](https://hpesciotti.github.io/GeoQuiz/index.html)
 
 
 ## CONTENTS  
@@ -52,11 +52,13 @@
 
 ## **1. Introduction**
 
-Welcome to Felipe Giubilei Photography, the website of a Brazilian audiovisual professional with a diverse portfolio comprising a plethora of photoshoots, from family pictures and renowned rock bands to journalistic images of demonstrations and independent short films. The website is designed as an online portfolio showcasing Felipe's artistic creations and aims to attract potential clients who value a skilled and versatile photographer by displaying his work.  
+This website/application is a quiz designed to test your geographical knowledge through a colourful and fun interface. The quiz, PP2 project of diploma in Full Stack Software Development by Code Institute, was designed to demonstrate proficiency with the front-end languages HTML, CSS, and JavaScript, especially the latter. 
 
-On a personal note, in the search for the ideal theme to build my first website, part of PP1, I was still deciding the object of this task. Starting from an actual premise for my first project is more manageable than creating a fictional business. 
+The choice of a geography-themed quiz is deeply personal, stemming from my academic background in Geography (bachelor's degree). Before my journey to Ireland, I spent 12 years as an environmental analyst. Thus, this project is a unique fusion of my academic knowledge and newfound coding skills.
 
-Therefore, I thought about the work of my dear cousin Felipe Giubilei, an accomplished photographer. To my surprise, his work needs a landing page. Thus, besides having a solid theme for my PP1 with excellent visual appeal given by his photos, I can soon grace him with a fully functional website.
+In principle, the quiz is comprised of questions that test the general notions of this area of knowledge without involving the memorization of capitals, flag colours or the names of countries. Part of the questions were designed by me, seeking to address 
+
+The application features a dynamic leaderboard section where users can record their best performance in the game. The quiz randomly selects ten questions from a database, each with four randomized answer options, ensuring a unique experience with every play. The leaderboard serves as a motivator, encouraging users to improve their scores and compete with others.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
