@@ -135,23 +135,23 @@ In this sense, I have identified three essential stages for the app to meet the 
 
 #### **Imagery**
 
-
+The site's background image was obtained through Adobe Firefly AI Image Generator application. The generative AI, based on a prompt indicating the colour palette, the illustration style, and the elements to be displayed, returned the [image](assets/images/background-image.webp) present in the application. Furthermore, the image was compressed and convert to webp.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Colour Scheme**
 
-The colour scheme is inspired by tones of violet, indigo, and spotlights, as seen in the selected pictures. This theme is currently popular in software development, and it can be seen in the Microsoft 365 icon, Microsoft Clipchamp and [ESRI Ireland's website](https://www.esri-ireland.ie/en-ie/homehttps://www.esri-ireland.ie/en-ie/home), which heavily weighted on the chosen appearance of my website's nav bar. The colour scheme also matches the background hues of the [hero-image](docs/documentation/hero-image.png).
+The colour scheme chosen is inspired by hues found in nature but in more vivid tones. The colour # f7e2b7 designates the yellow of sand or dirt, the blue of lakes is represented by the colour #20596c, the green of forests is present in the colour #a4dbb1, and the blue of glaciers is represented through #daf5ec.
 
 ![Colour Scheme](docs/documentation/colour-scheme.png)
 
-The selection of text and background took into consideration the contrast ratio of at least Level AA. [EightShape contrast grid](docs/documentation/contrast-grid.png) is present in the documentation. 
+The selection of text and background took into consideration the contrast ratio of at least Level AA. [EightShape contrast grid](docs/documentation/contrast-grid.png) is present in the documentation. The white fonts with [drop-shadow](docs/documentation/drop-shadow-typography.png) present on the user name and leaderbord are not classified as AAA or AA, but the colour used on the drop-shadow effect are, highliting the letters from the background.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Typography**
 
-I employed three different fonts for the website design. The logo features the Bauhaus 93 font, which is not included in the style.css file as it was utilized in another software to create the logo image. The other two fonts, Inter and Rubik, are sourced from Google Fonts. Rubik font is applied to the navigation bar, while Inter is used in the rest of the website's sections, such as textual elements.
+The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/). I opt to use only one font on this website/application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -236,7 +236,7 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 - [Git](https://git-scm.com/): used for version control
 
-- [Google Fonts](https://fonts.google.com/): fonts were imported from here 
+- [Google Fonts](https://fonts.google.com/): font was imported from here 
 
 - [Font Awesome](https://fontawesome.com/): icons and their associated kit were downloaded from here  
 
@@ -252,9 +252,9 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 - [Grammarly](https://app.grammarly.com): for spelling or grammatical inaccuracies in the text
 
-- [Google Dev Tools](https://developer.chrome.com/docs/devtools): to debug and for testing responsiveness 
+- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools): to debug and for testing responsiveness 
 
-- [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk): for auditing the performance of the website
+- [Google Chrome Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk): for auditing the performance of the website
 
 - [W3C Validator](https://validator.w3.org/#validate_by_input): for validating HTML code 
 
@@ -395,7 +395,7 @@ III. At the top of the Repository, find the "Settings" button on the menu and cl
 IV. Inside the settings, on the left side of the page, there’s a list of tab menu. Find the “Pages” tab, and click on it.
 V. Under "Source", click on the dropdown item called "None", select "Master", and then click on the “Save” button.
 VI. The page will automatically refresh.
-VII. Now you should see a notification message that provides the now published site link: “Your site is ready to be published at [https://hpesciotti.github.io/FGiubilei/](https://hpesciotti.github.io/FGiubilei/)”.
+VII. Now you should see a notification message that provides the now published site link: “Your site is ready to be published at [https://hpesciotti.github.io/GeoQuiz](https://hpesciotti.github.io/GeoQuiz)”.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -464,7 +464,7 @@ Changes made on the local machine (cloned repository) can be pushed to the upstr
 
 - [Deeksa Varma](https://github.com/deeksha-varma/portfolio_project_2): same project in nature helped significantly with implementing the leaderboard.
 
-- [Amy Richardson/scoops](https://github.com/amylour/irish_wildlife_matchup): for usarname section.
+- [Amy Richardson](https://github.com/amylour/irish_wildlife_matchup): for usarname section.
 
 - [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA): help put together the displayQuestion function, and I took some inspiration from him regarding the fonts and css effects.
 
