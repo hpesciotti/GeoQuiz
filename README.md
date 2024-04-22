@@ -135,13 +135,7 @@ In this sense, I have identified three essential stages for the app to meet the 
 
 #### **Imagery**
 
-I used authorial photos, so I had to select images from the photographer's portfolio. As selecting criteria, I wanted images to elucidate his capabilities and versatility. I ended up grouping the pictures into six types, which subsequently became the sections inside the gallery page, those are: 
--   Concerts,
--   Family Moments,
--   Solo Photoshoots,
--   Institutional Events,
--   Urban Photography, and,
--   Weddings.
+
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
