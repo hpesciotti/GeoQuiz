@@ -300,7 +300,7 @@ main h3 {
 /* Set styles from validateAnswer() */
 .correct {
     background: #a4dbb1;
-    color: #2a494c;
+    color: #20596c;
     border: 2px solid rgba(42, 73, 76, 90%);
     font-weight: 600;
 }

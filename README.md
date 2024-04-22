@@ -237,31 +237,31 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 ### **4.2 - Frameworks, Libraries, Technologies & Programs Used**  
 
-- Gitpod: used form coding
+- [Gitpod](https://www.gitpod.io): used form coding
 
-- GitHub: to save and store all files for this website  
+- [GitHub](https://github.com/): to save and store all files for this website  
 
-- Git: used for version control
+- [Git](https://git-scm.com/): used for version control
 
-- Google Fonts: fonts were imported from here 
+- [Google Fonts](https://fonts.google.com/): fonts were imported from here 
 
-- Font Awesome: icons and their associated kit were downloaded from here  
+- [Font Awesome](https://fontawesome.com/): icons and their associated kit were downloaded from here  
 
-- Balsamic: used to create wireframes
+- [Balsamiq](https://balsamiq.com): used to create wireframes
 
 - [Adobe Firefly AI Image Generator](https://firefly.adobe.com/): used to create application background image
 
-- Favicon.io: for ice cream favicon  
+- [Favicon.io](https://favicon.io/): for ice cream favicon  
 
 - [Tiny PNG](https://tinypng.com/): to compress images
 
-- ChatGPT:  for improving and making text content more engaging
+- [ChatGPT](https://chat.openai.com/):  for improving and making text content more engaging
 
-- Grammarly: for spelling or grammatical inaccuracies in the text
+- [Grammarly](https://app.grammarly.com): for spelling or grammatical inaccuracies in the text
 
-- Google Dev Tools: to debug and for testing responsiveness 
+- [Google Dev Tools](https://developer.chrome.com/docs/devtools): to debug and for testing responsiveness 
 
-- Google Lighthouse: for auditing the performance of the website
+- [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk): for auditing the performance of the website
 
 - [W3C Validator](https://validator.w3.org/#validate_by_input): for validating HTML code 
 
@@ -271,7 +271,9 @@ This is a conventional 404 error page, with text explaining that a link is missi
 
 - [Am I responsive](https://ui.dev/amiresponsive): check responsivity of websites
 
-- MS Paint: for editing the captured screenshots
+- [EightShapes Contrast Gradient](https://contrast-grid.eightshapes.com/): check WCAG 2.0 minimum contrast
+
+- [MS Paint](https://www.microsoft.com/en-us/windows/paint): for editing the captured screenshots
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
