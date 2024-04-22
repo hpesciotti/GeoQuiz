@@ -66,27 +66,23 @@ The application features a dynamic leaderboard section where users can record th
 
 ### **2.1. Strategy**
 
-While researching other photographers' websites, I noticed they were very minimalistic in design, with few text sections and mainly focusing on the photos. The artistic appeal was high, but the page layout structure was sometimes unorthodox. Another thing I noticed is that, in general, there are two types of photographer websites: some more artistic, which belong to award-winning professionals, and the more user friendly ones, with more recognizable sections, sucha as contact details, which belong to freelance professionals specialized in wedding photoshoots. 
+In the app's planning stage, I visited some websites with quizzes that dealt with general geography issues, such as country capitals, landmarks, etc. However, I didn't find any of these quick quiz sites with more academically accurate content. So, I opted for a database of questions from the Brazilian vestibular exam (corresponding to the Irish leaving cert exam). I adapted most of the questions and inserted some others that would better portray Ireland's natural and geopolitical landscape. 
 
-I intended to blend those styles, striking a balance between something artistic but also accessible and luring possible clients. I am also looking for a familiar design for the website, and I concluded that we usually connect with photography through Instagram or Flickr. Considering my coding limitations, I looked for design and layout trademarks from those companies to implement on my website.
+During my research, I came across websites that listed questions on a single page, which didn't align with the projects discussed in our weekly scrums. In one of these meetings, I shared my choice for PP2 with our cohort facilitator. She introduced us to the Geography for Kids project, a collaborative effort led by Deeksa Varma, which served as a valuable reference for our project. 
 
-Some of the photographer's pages I researched were selected by [Webcitz](https://www.webcitz.com/blog/50-best-photographer-websites/) as the best 50 photographers websites.
+As a personal note, while analyzing the Geography for Kids project code, I noticed it was complex compared to the other app samples. Through a search on GitHub, I confirm that a person with a good background in the field developed it, which contrasts with my background of almost no coding experience before enrolling in Code Institute's course. The complexity ultimately led me to intensify my immersion in JavaScript and improve my skills.
 
-#### **Artistic Unorthodox Websites**
+The app is aimed at people of all ages and backgrounds, but it's best suited to people who have already completed elementary school. It also aims to create a playful and colourful environment that introduces the user to the main themes of geography, such as Geopolitics, Climatology, Landforms, and Biogeography. 
 
-- [David William Baum](https://www.davidwilliambaum.com/)
+Responsibility is essential for the app as it allows users to access the quiz from various devices. Finally, the high score/leaderboard system gives greater engagement by generating competition between friends and potential users. 
 
-- [Levon Biss](https://levonbiss.com/)
+#### **Sites that I took inspriration for my project**
 
-- [Giles Clement](https://www.gilesclement.com/)
+- [Geography for Kids](https://deeksha-varma.github.io/portfolio_project_2/)
 
-#### **More User Friendly Websites**
+- [Exercícios de Geografia(Geography Questions)](https://exercicios.brasilescola.uol.com.br/exercicios-geografia)
 
-- [Greg Ross](https://www.gregoryrossblog.com/)
-
-- [Kristen Hazelton](https://kristenhazelton.com/)
-
-- [WeShootFood](https://www.weshootfood.net/)
+- [GreatStack's video tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
