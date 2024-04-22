@@ -20,6 +20,36 @@
         ]
     },
     {
+        "question": "What type of river channel patterns are commonly associated with oxbow lakes?",
+        "answer": "Meandering",
+        "options": [
+            "Meandering",
+            "Braiding",
+            "Straight",
+            "Anastomosing"
+        ]
+    },
+    {
+        "question": "What is Ireland's most predominant original vegetation cover?",
+        "answer": "Temperate rainforest and bogs",
+        "options": [
+            "Temperate rainforest and bogs",
+            "Grasslands pastures",
+            "Tropical rainforest and pine forest",
+            "Garrigue and maquis scrubland"
+        ]
+    },
+    {
+        "question": "Based on the geographical coordinate system, which country would the following coordinates, lat = +38°41'29 long = +9°12'57, be located in?",
+        "answer": "Portugal",
+        "options": [
+            "United States of America",
+            "Brazil",
+            "India",
+            "Portugal"
+        ]
+    },
+    {
         "question": "For an area to be considered a desert, what volume of rain must it receive a year?",
         "answer": "Less than 100mm per year",
         "options": [
@@ -58,7 +88,6 @@
             "Deserts",
             "Temperate forests"
         ]
-
     },
     {
         "question": "What percentage of the world's water do rivers and lakes hold?",
