@@ -46,19 +46,27 @@ function startQuiz() {
 
 // Displays Leaderboard - Inspired by Deeksa Varma PP2 Project - iterate Leaderboard Array in local storage //
 function callLeaderboard() {
+    placeholderScore();
     leaderboardSection.style.display = "block";
     optionsPanel.style.display = "none";
     quizBox.style.display = "none";
-    if (leaderboardList != null) {
-        noRecordSet.style.display = "blocl";
-        leadNameScore.style.display = "none";
-    } else {
-        noRecordSet.style.display = "none";
-        leadNameScore.style.display = "block";
-    }
     leaderboardList.innerHTML = leaderboard.map(lbScore => {
         return `<li class="white-halo">${lbScore.username}........${lbScore.score}</li>`;
     }).join('');
+}
+
+function placeholderScore() {
+    // Retrieve the score from local storage and parse it if necessary
+    let parameterScore = JSON.parse(localStorage.getItem("leaderboardScore"));
+
+    // Check if the score is greater than 0
+    if (parameterScore > 0) {
+        noRecordSet.style.display = "none";
+        leadNameScore.style.display = "block";
+    } else {
+        noRecordSet.style.display = "block";
+        leadNameScore.style.display = "none";
+    }
 }
 
 // Username inspired by Amy Richardson PP2 project

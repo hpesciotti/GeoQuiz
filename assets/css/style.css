@@ -123,7 +123,7 @@ main {
 }
 
 #no-record-set {
-    display: block;
+    display: none;
 }
 
 #lead-name-score {
