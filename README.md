@@ -196,7 +196,7 @@ I accomplished this design based on the Love Running Project.
 
 - There's also a "call to action" box that quickly informs the user of the website's main goal. This element was a source of a couple of errors due to its responsivity. The box was bleeding the Hero Section on smaller screens, which prompted me to change the hero image to a relative measure. In this case, I've used "em" unit for the length of the hero image.
 
-[Back to top]((https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Error 404 Page**
 
@@ -282,79 +282,51 @@ The browsers used were:
 
 #### **HTML Validation using W3C Validation** 
 
-All of the pages are valid, showing no errors or warnings, except for the contact page.
-The error was diagnosed as bad value URL attribute method on element form.
-I opted to change the post method redirecting to Code Institute dump page to a URL method, as my mentor and cohort facilitator indicated.
+All of the two design pages are valid, showing no errors or warnings. The first versions contained indentation errors and some unclosed divs.
+These issues with HTML structure were resolved after validation by the W3C validator.
 
 ![W3 validator Contact](docs/documentation/w3-checker-contact.png)
 
 ##### **W3C Validation Chart**
 |	Page	|	Result	|	Screenshot	|
 |	 :----	|	  :----	|	  :------------:|
-|	[Index](https://hpesciotti.github.io/FGiubilei/index.html)	|	No erros/warnings	|	[W3 validator Index](docs/documentation/w3-checker-index.png)	|
-|	[Contact](https://hpesciotti.github.io/FGiubilei/contact.html)	|	Error bad URL	|	[W3 validator Contact](docs/documentation/w3-checker-contact.png)	|
-|	[About](https://hpesciotti.github.io/FGiubilei/about.html)	|	No erros/warnings	|	[W3 validator About](docs/documentation/w3-checker-about.png)	|
-|	[Thank You](https://hpesciotti.github.io/FGiubilei/thank-you.html)	|	No erros/warnings	|	[W3 validator Thank-You](docs/documentation/w3-checker-thank-you.png)	|
-|	[404](https://hpesciotti.github.io/FGiubilei/404.html)	|	No erros/warnings	|	[W3 validator 404](docs/documentation/w3-checker-404.png)	|
-|	[Gallery](https://hpesciotti.github.io/FGiubilei/gallery.html)	|	No erros/warnings	|	[W3 validator Gallery](docs/documentation/w3-checker-gallery.png)	|
-|	[Gallery-Family Moments](https://hpesciotti.github.io/FGiubilei/gallery-family.html)	|	No erros/warnings	|	[W3 validator Gallery-Family Moments](docs/documentation/w3-checker-gallery-family.png)	|
-|	[Gallery-Concerts](https://hpesciotti.github.io/FGiubilei/gallery-concerts.html)	|	No erros/warnings	|	[W3 validator Gallery-Concerts](docs/documentation/w3-checker-gallery-concerts.png)	|
-|	[Gallery-Solo Photoshoots](https://hpesciotti.github.io/FGiubilei/gallery-solo.html)	|	No erros/warnings	|	[W3 validator Gallery-Solo Photoshoots](docs/documentation/w3-checker-gallery-solo.png)	|
-|	[Gallery-Urban Pictures](https://hpesciotti.github.io/FGiubilei/gallery-urban.html)	|	No erros/warnings	|	[W3 validator Gallery-Urban Pictures](docs/documentation/w3-checker-gallery-urban.png)	|
-|	[Gallery-Videos](https://hpesciotti.github.io/FGiubilei/gallery-video.html )	|	No erros/warnings	|	[W3 validator Gallery-Videos](docs/documentation/w3-checker-gallery-video.png)	|
-|	[Gallery-Weddings](https://hpesciotti.github.io/FGiubilei/gallery-weddings.html)	|	No erros/warnings	|	[W3 validator Gallery-Weddings](docs/documentation/w3-checker-gallery-weddings.png)	|
-|	[Gallery-Institutional Events](https://hpesciotti.github.io/FGiubilei/gallery-i-events.html)	|	No erros/warnings	|	[W3 validator Gallery-Institutional Events](docs/documentation/w3-checker-gallery-i-events.png)	|
+|	[Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	No erros/warnings	|	[W3 validator Index](docs/documentation/w3-checker-index.png)	|
+|	[404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	No erros/warnings	|	[W3 validator 404](docs/documentation/w3c-html-validator-404.png)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **CSS Validation using W3C Validation** 
 
-![W3 Css.Style](docs/documentation/w3-css.png)
+According with the evaluation of W3C Jigsaw validator the [style.css](docs/documentation/w3c-css-validator.png) has no errors nor warnings.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Performance Lighthouse**
 
-I have received relatively low-performance ratings from Google Chrome Lighthouse-DevTools. Although I thoroughly compact the images and convert them to WebP, the scores on some pages, notably the gallery pictures, are sometimes lower than 80. I asked my mentor([mine](docs/documentation/lighthouse-gallery-familly-desktop.png), [his](docs/documentation/lighthouse-mentor.png)) and a friend([mine](docs/documentation/lighthouse-index-desktop.png), [his](docs/documentation/lighthouse-friend.png)) to check the performance of some random pages, and they got good results. My internet connection was unstable during the tests. 
+On average, GeoQuiz got a good performance index in both mobile and desktop versions of the Lighthouse validator. The following charts show the score in the performance register by Google's Chrome validator. 
 
 ##### **Lighthouse performance Chart - Desktop**
 Page	|	Score	|	Screenshots
  :----	|	  :----	|	  :------------
-[Index](https://hpesciotti.github.io/FGiubilei/index.html)	|	79	|	[W3 validator Index](docs/documentation/lighthouse-index-desktop.png)
-[Contact](https://hpesciotti.github.io/FGiubilei/contact.html)	|	95	|	[W3 validator Contact](docs/documentation/w3-checker-contact-desktop.png)
-[About](https://hpesciotti.github.io/FGiubilei/about.html)	|	88	|	[W3 validator About](docs/documentation/w3-checker-about-desktop.png)
-[Thank You](https://hpesciotti.github.io/FGiubilei/thank-you.html)	|	91	|	[W3 validator Thank-You](docs/documentation/w3-checker-thank-you-desktop.png)
-[404](https://hpesciotti.github.io/FGiubilei/404.html)	|	92	|	[W3 validator 404](docs/documentation/w3-checker-404-desktop.png)
-[Gallery](https://hpesciotti.github.io/FGiubilei/gallery.html)	|	79	|	[W3 validator Gallery](docs/documentation/w3-checker-gallery-desktop.png)
-[Gallery-Family Moments](https://hpesciotti.github.io/FGiubilei/gallery-family.html)	|	86	|	[W3 validator Gallery-Family Moments](docs/documentation/w3-checker-gallery-family-desktop.png)
-[Gallery-Concerts](https://hpesciotti.github.io/FGiubilei/gallery-concerts.html)	|	83	|	[W3 validator Gallery-Concerts](docs/documentation/w3-checker-gallery-concerts-desktop.png)
-[Gallery-Solo Photoshoots](https://hpesciotti.github.io/FGiubilei/gallery-solo.html)	|	82	|	[W3 validator Gallery-Solo Photoshoots](docs/documentation/w3-checker-gallery-solo-desktop.png)
-[Gallery-Urban Pictures](https://hpesciotti.github.io/FGiubilei/gallery-urban.html)	|	77	|	[W3 validator Gallery-Urban Pictures](docs/documentation/w3-checker-gallery-urban-desktop.png)
-[Gallery-Videos](https://hpesciotti.github.io/FGiubilei/gallery-video.html )	|	87	|	[W3 validator Gallery-Videos](docs/documentation/w3-checker-gallery-video-desktop.png)
-[Gallery-Weddings](https://hpesciotti.github.io/FGiubilei/gallery-weddings.html)	|	79	|	[W3 validator Gallery-Weddings](docs/documentation/w3-checker-gallery-weddings-desktop.png)
-[Gallery-Institutional Events](https://hpesciotti.github.io/FGiubilei/gallery-i-events.html)	|	79	|	[W3 validator Gallery-Institutional Events](docs/documentation/w3-checker-gallery-i-events-desktop.png)
+[Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	96	|	[W3 validator Index](docs/documentation/index-lighthouse-desktop-index.png)
+[404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	98	|	[W3 validator Contact](docs/documentation/index-lighthouse-desktop-404.png)
 
 ##### **Lighthouse performance Chart - Mobile**
-|	Page	|	Score	|	Screenshots
-|	 :----	|	  :----	|	  :------------
-|	[Index](https://hpesciotti.github.io/FGiubilei/index.html)	|	78	|	[W3 validator Index](docs/documentation/lighthouse-index-mobile.png)
-|	[Contact](https://hpesciotti.github.io/FGiubilei/contact.html)	|	94	|	[W3 validator Contact](docs/documentation/w3-checker-contact-mobile.png)
-|	[About](https://hpesciotti.github.io/FGiubilei/about.html)	|	89	|	[W3 validator About](docs/documentation/w3-checker-about-mobile.png)
-|	[Thank You](https://hpesciotti.github.io/FGiubilei/thank-you.html)	|	96	|	[W3 validator Thank-You](docs/documentation/w3-checker-thank-you-mobile.png)
-|	[404](https://hpesciotti.github.io/FGiubilei/404.html)	|	92	|	[W3 validator 404](docs/documentation/w3-checker-404-mobile.png)
-|	[Gallery](https://hpesciotti.github.io/FGiubilei/gallery.html)	|	79	|	[W3 validator Gallery](docs/documentation/w3-checker-gallery-mobile.png)
-|	[Gallery-Family Moments](https://hpesciotti.github.io/FGiubilei/gallery-family.html)	|	84	|	[W3 validator Gallery-Family Moments](docs/documentation/w3-checker-gallery-family-mobile.png)
-|	[Gallery-Concerts](https://hpesciotti.github.io/FGiubilei/gallery-concerts.html)	|	86	|	[W3 validator Gallery-Concerts](docs/documentation/w3-checker-gallery-concerts-mobile.png)
-|	[Gallery-Solo Photoshoots](https://hpesciotti.github.io/FGiubilei/gallery-solo.html)	|	82	|	[W3 validator Gallery-Solo Photoshoots](docs/documentation/w3-checker-gallery-solo-mobile.png)
-|	[Gallery-Urban Pictures](https://hpesciotti.github.io/FGiubilei/gallery-urban.html)	|	76	|	[W3 validator Gallery-Urban Pictures](docs/documentation/w3-checker-gallery-urban-mobile.png)
-|	[Gallery-Videos](https://hpesciotti.github.io/FGiubilei/gallery-video.html )	|	88	|	[W3 validator Gallery-Videos](docs/documentation/w3-checker-gallery-video-mobile.png)
-|	[Gallery-Weddings](https://hpesciotti.github.io/FGiubilei/gallery-weddings.html)	|	81	|	[W3 validator Gallery-Weddings](docs/documentation/w3-checker-gallery-weddings-mobile.png)
-|	[Gallery-Institutional Events](https://hpesciotti.github.io/FGiubilei/gallery-i-events.html)	|	77	|	[W3 validator Gallery-Institutional Events](docs/documentation/w3-checker-gallery-i-events-mobile.png)
+Page	|	Score	|	Screenshots
+ :----	|	  :----	|	  :------------
+[Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	90	|	[W3 validator Index](docs/documentation/index-lighthouse-mobile-index.png)
+[404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	94	|	[W3 validator Contact](docs/documentation/index-lighthouse-mobile-404.png)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 ##### **JSHint Validator**
+According to the JsHint validator, no major error was detected. However, the evaluation pointed out several missing semicolons in the code, which were promptly inserted after submission. 
 
+The validator also indicated there are 27 functions in this file. The function with the largest signature takes 2 arguments, while the median is 0. The largest function has 19 statements, while the median is 3. The most complex function has a cyclomatic complexity value of 5, while the median is 1.
+
+Additionally, JSHint detected three unused variables startQuiz, callLeaderboard and enterPlayerName. Those variables are functions called by on-click events directly on the HTML file.
+
+[JsHint validator evaluation](docs/documentation/js-hint.png)
 
 ### **5.2. Bugs & Fixes** 
 
