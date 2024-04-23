@@ -335,7 +335,7 @@ main h3 {
 
 #incorrect-counter {
     color: #e7f0e9;
-    filter: drop-shadow(0 0 5px #95242d);
+    filter: drop-shadow(0 0 5px #66161C);
     font-weight: 500;
     font-size: 1.3rem;
 }
