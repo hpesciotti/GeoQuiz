@@ -92,12 +92,19 @@ main {
     cursor: pointer;
     justify-content: center;
     align-self: center;
+    text-align: center;
 }
 
 .btn-option-panel:hover {
     color: #f7e2b7;
     background: #20596c;
     border: 2px solid rgba(247, 226, 183, 90%);
+}
+
+#back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Leaderboard Section */
