@@ -56,10 +56,10 @@ function callLeaderboard() {
 }
 
 function placeholderScore() {
-    // Retrieve the score from local storage and parse it if necessary
+    // Gets score from local storage by parse
     let parameterScore = JSON.parse(localStorage.getItem("leaderboardScore"));
 
-    // Check if the score is greater than 0
+    // Checks if the local storage parameter .score is greater than 0
     if (parameterScore > 0) {
         noRecordSet.style.display = "none";
         leadNameScore.style.display = "block";

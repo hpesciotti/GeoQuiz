@@ -170,44 +170,41 @@ The employed typography was Poppins provided by [Google Fonts](https://fonts.goo
 
 ### **3.1. Existing Features**
 
-#### **Index/Home Page**
+#### **Main Menu**
 
-##### **Navigation Bar**
+A Welcome or Landing page, The Main Menu greets the user by briefly introducing the web application: "A Geography Quiz for all ages and backgrounds." Sequentially, a call to action invites users to challenge themselves by starting the quiz. The page also has two buttons, one to access the quiz and the other to display the leaderboard.
 
-![Nav Bar](docs/documentation/nav-bar-desktop-tablet.png)
+As far as the code is concerned, at this stage, when the DOM is fully loaded, the question database in j.son format is assigned to the (const) allQuestions variable via the event listener and the fetch API.
 
-- The navigation bar features links that allow users to scroll smoothly to any main page sections.
+<details open>
+<summary>Main Menu</summary>
 
-- The mobile version substitutes the links for a toggle menu indicated by stacked bars. The link area is available through a dropdown menu. 
-I accomplished this design based on the Love Running Project.
+![Landing page - mobile](docs/documentation/main-menu-mobile.png)
 
-![Nav Bar](docs/documentation/nav-bar-mobile.png)
+![Landing page - desktop](docs/documentation/main-menu-desktop.png)
 
-![Toggle Menu](docs/documentation/drop-down-menu-mobile.png)
+</details>
 
-- A hover effect [transform scale](https://www.w3schools.com/cssref/css3_pr_transform.php) was added on the link anchors for the desktop version. This feature was suggested by a friend, Bruno Dias. I was using a transform font-size effect in early iterations.
+##### **Instructions/Username**
 
-![Hover transform](docs/documentation/hover-transform.png)
+This page defines the guidelines and provides general instructions on how the quiz works. The user must enter a valid username in a text input area with a maximum length of 15 characters. The user entry is saved in local storage and will later be used in the leaderboard. The function to get the username was inspired by Amy Richardson's PP2 project. The username is also reproduced on the following page via inner.html
 
-- The navigation bar's background has a degradé effect that changes from a three-colour gradient on the desktop/tablet version to a two-colour gradient on the mobile version. This choice was simply made by aesthetics. I drew inspiration from a degradé background from [ESRI Ireland's website](https://www.esri-ireland.ie/en-ie/homehttps://www.esri-ireland.ie/en-ie/home). The background css querry was obtainded through [CSS Gradient's website](https://cssgradient.io/).
+Once the user's name is entered, a function is called to randomly pull ten questions from the allQuestions variable, which is the database. The setGameQuestions function generates playable questions by selecting "n" questions from a question database stored in the variable "allQuestions". It utilizes a loop to iterate over the questions and pushes them into an array named "gameQuestions". The design of this function was influenced by the approach discussed in the following Stack Overflow post: [Push 3 random names into a new array](https://stackoverflow.com/questions/52763765/push-3-random-names-into-a-new-array).
 
-[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
+Also, in the code sphere,  setQuestionsOptions sets the answer options for each question in the gameQuestions array by shuffling them. It employs the Durstenfeld shuffle algorithm, which efficiently randomizes the order of elements in an array. The implementation of this function draws inspiration from a thread on Stack Overflow regarding [How to randomize (shuffle) a JavaScript array.](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
 
-##### **Hero Section**
+<details open>
+<summary>Instructions/Username</summary>
 
-![Hero Section](docs/documentation/hero-image.png)
+![Landing page - mobile](docs/documentation/instructions-mobile.png)
 
-- The Hero Section of my website occupies the full width of the screen and is located at the top of the index page. I intended to capture the visitor's attention with a captivating picture that would also match the website's colour scheme. 
+![Landing page - desktop](docs/documentation/instructions-desktop.png)
 
-- The Hero Section is responsive and maintains the shirtless man dancing at the centre of the page in all size versions of the website. 
+</details>
 
-![Hero Section Mobile and Tablet](docs/documentation/hero-image-mobile-tablet.png)
+##### **Quiz Questions**
 
-- This feature wasn't planned when the wireframes were created, but the spacing and lack of an eye-catching element drove me to add the current Hero Section. I took inspiration for this feature from the Love Running Project.
-
-- There's also a "call to action" box that quickly informs the user of the website's main goal. This element was a source of a couple of errors due to its responsivity. The box was bleeding the Hero Section on smaller screens, which prompted me to change the hero image to a relative measure. In this case, I've used "em" unit for the length of the hero image.
-
-[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
+##### **Leaderboard**
 
 #### **Error 404 Page**
 
