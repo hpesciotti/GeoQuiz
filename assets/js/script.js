@@ -55,7 +55,7 @@ function callLeaderboard() {
     } else {
         noRecordSet.style.display = "none";
         leadNameScore.style.display = "block";
-    };
+    }
     leaderboardList.innerHTML = leaderboard.map(lbScore => {
         return `<li class="white-halo">${lbScore.username}........${lbScore.score}</li>`;
     }).join('');
