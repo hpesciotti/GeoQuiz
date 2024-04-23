@@ -2,7 +2,7 @@
 
 ![GeoQuiz displayed on various devices](docs/documentation/am-i-responsive.png)
 
-[Visit my PP2 website here](https://hpesciotti.github.io/GeoQuiz/index.html)
+[Visit my PP2 web application here](https://hpesciotti.github.io/GeoQuiz/index.html)
 
 
 ## CONTENTS  
@@ -52,7 +52,7 @@
 
 ## **1. Introduction**
 
-This website/application is a quiz designed to test your geographical knowledge through a colourful and fun interface. The quiz, PP2 project of diploma in Full Stack Software Development by Code Institute, was designed to demonstrate proficiency with the front-end languages HTML, CSS, and JavaScript, especially the latter. 
+This Front-End web application is a quiz designed to test your geographical knowledge through a colourful and fun interface. The quiz, PP2 project of diploma in Full Stack Software Development by Code Institute, was designed to demonstrate proficiency with the front-end languages HTML, CSS, and JavaScript, especially the latter. 
 
 The choice of a geography-themed quiz is deeply personal, stemming from my academic background in Geography (bachelor's degree). Before my journey to Ireland, I spent 12 years as an environmental analyst. Thus, this project is a unique fusion of my academic knowledge and newfound coding skills.
 
@@ -66,13 +66,13 @@ The application features a dynamic leaderboard section where users can record th
 
 ### **2.1. Strategy**
 
-In the app's planning stage, I visited some websites with quizzes that dealt with general geography issues, such as country capitals, landmarks, etc. However, I didn't find any of these quick quiz sites with more academically accurate content. So, I opted for a database of questions from the Brazilian vestibular exam (corresponding to the Irish leaving cert exam). I adapted most of the questions and inserted some others that would better portray Ireland's natural and geopolitical landscape. 
+In the app's planning stage, I visited some websites with web applications that dealt with general geography issues, such as country capitals, landmarks, etc. However, I didn't find any of these quick quiz sites with more academically accurate content. So, I opted for a database of questions from the Brazilian vestibular exam (corresponding to the Irish leaving cert exam). I adapted most of the questions and inserted some others that would better portray Ireland's natural and geopolitical landscape. 
 
 During my research, I came across websites that listed questions on a single page, which didn't align with the projects discussed in our weekly scrums. In one of these meetings, I shared my choice for PP2 with our cohort facilitator. She introduced us to the Geography for Kids project, a collaborative effort led by Deeksa Varma, which served as a valuable reference for our project. 
 
 As a personal note, while analyzing the Geography for Kids project code, I noticed it was complex compared to the other app samples. Through a search on GitHub, I confirm that a person with a good background in the field developed it, which contrasts with my background of almost no coding experience before enrolling in Code Institute's course. The complexity ultimately led me to intensify my immersion in JavaScript and improve my skills.
 
-The app is aimed at people of all ages and backgrounds, but it's best suited to people who have already completed elementary school. It also aims to create a ludic playful and colourful environment that introduces the user to the main themes of geography, such as Geopolitics, Climatology, Landforms, and Biogeography. 
+The app is aimed at people of all ages and backgrounds, but it's best suited to people who have already completed elementary school. It also aims to create a ludic playful and colourful environment that introduces the user to the main themes of geography, such as Geopolitics, Climatology, Carthography, Landforms, and Biogeography. 
 
 Responsibility is essential for the app as it allows users to access the quiz from various devices. Finally, the high score/leaderboard system gives greater engagement by generating competition between friends and potential users. 
 
@@ -106,7 +106,7 @@ Responsibility is essential for the app as it allows users to access the quiz fr
 
 ### **2.3. Wireframes**
 
-I generated the preliminary website wireframes utilizing Balsamiq. I had yet to finalize the colour scheme at this stage of the project's conception. Therefore, I focused solely on establishing the foundational elements of features and application flow.
+I generated the preliminary web application wireframes utilizing Balsamiq. I had yet to finalize the colour scheme at this stage of the project's conception. Therefore, I focused solely on establishing the foundational elements of features and web application flow.
 
 In this sense, I have identified three essential stages for the app to meet the user stories requirements, which I have appointed as: 
 - intro - "landing page" with the instructions and a form section to get the player name.
@@ -151,7 +151,7 @@ The selection of text and background took into consideration the contrast ratio 
 
 #### **Typography**
 
-The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/). I opt to use only one font on this website/application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA)
+The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/). I opt to use only one font on this web application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -201,8 +201,12 @@ I accomplished this design based on the Love Running Project.
 #### **Error 404 Page**
 
 This is a conventional 404 error page, with text explaining that a link is missing. I designed the page with a button to return to the index page; in fact, the button is just an anchor element. This customized page replaces the standard GitHub page.
+<details open>
+<summary>Error 404</summary>
 
 ![Error 404](docs/documentation/error-404.png)
+
+</details>
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -229,7 +233,7 @@ The data would be store in a server, instead of the local storage.
 
 - [Gitpod](https://www.gitpod.io): used form coding
 
-- [GitHub](https://github.com/): to save and store all files for this website  
+- [GitHub](https://github.com/): to save and store all files for this web application 
 
 - [Git](https://git-scm.com/): used for version control
 
@@ -251,7 +255,7 @@ The data would be store in a server, instead of the local storage.
 
 - [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools): to debug and for testing responsiveness 
 
-- [Google Chrome Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk): for auditing the performance of the website
+- [Google Chrome Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk): for auditing the performance of the web application
 
 - [W3C Validator](https://validator.w3.org/#validate_by_input): for validating HTML code 
 
@@ -333,10 +337,9 @@ Additionally, JSHint detected three unused variables startQuiz, callLeaderboard 
 ##### **Bugs & Fixes - Chart**
 |	Bug	|	Sollution	|	Screenshots
 |	 :----	|	  :----	|	  :------------
-|	Font Awesome Icons wasn't being overridden by  footer style it keeps the open link appearance	|	Add to *wildcard operator: text-decoration: none; list-style: none; color: inherit;	|	[Fix](docs/documentation/error-1-font-awesome.png)
-|	"Call to Action" pink box is not aligned to the hero section in mobile with large screens	|	Add relative units in mobile version (55em)	|	[Bug](docs/documentation/error-2-floating-box.png) / [Fix](docs/documentation/error-2-solution.png)
-|	Contact Form was not aligned to left corner of the page in iPad Air	|	Add a media querry for 800px	|	[Bug](docs/documentation/error-3-issue-left-form.png) / [Fix](docs/documentation/error-3-solution-left-form.png)
-|	Performance Issues due to high resolution photos in jpg format	|	Resize and compact images and transform JPG to WEBP by CloudConvert. <br>The image had been compacted once via Tiny Png, but it was needed further compression.	|	[Bug](docs/documentation/error-4-heavy-images)
+|	Due to elongated aspect ratios, both Galaxy Z Fold 5 and Surface Duo devices, resulted in the username text option superposing the question container	|	I designed two media queries to accommodate those device's aspect ratios. The solution revolved around adding a bigger max-width. 	|	[Bug-Galaxy Fold](docs/documentation/bug-galaxy-fold.png)<br>[Bug-Surface Duo](docs/documentation/bug-surface-duo.png)
+|	During the test phase, on choosing to play again through the quiz, I noticed that, despite the insertion of a function to set to zero, the right or wrong answers counter, the values would only update and display the score of the current section on the counter and after a selection of a correct question.<br>Finally, as mentioned, the leaderboard was added at the end of the web application development process. Despite the fix indicated above, with a series of quiz completions and/or starting the game via the leaderboard, in the case of players with the same username, the final score was obtained after logging in by skipping the questions altogether.	|	I tried a number of solutions, such as resetting the value of the score and wrongScore variables to 0, but the error still persisted. So, in order not to involve a complex refactoring of the code, I replaced the runQuiz() function in the play again option with location.reload(), reloading the DOM.	|	[Bug](docs/documentation/bug-2.png) <br> [Fix](docs/documentation/fix-2.png)
+|	CThe leaderboard feature was inserted late in the development process. Once the action "play again" is chosen from the leaderboard, the text element of this feature is displayed on the screen. If you enter a play-again loop from the leaderboard, eventually, the game crashes.	|	AThe solution to this bug was simple. All I had to do was add the option not to display the leaderboard section ( leaderboardSection.style.display = "none";) to the startQuiz() function.	|	<br> [Bug](docs/documentation/bug-3-0.png) <br> [Bug](docs/documentation/bug-3-1.png) <br> [Fix](docs/documentation/fix-3.png)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -352,7 +355,7 @@ Additionally, JSHint detected three unused variables startQuiz, callLeaderboard 
 
 ## **6. Deployment**
 
-The website was developed using Gitpod code editor, committed to Git as a local repository, and then pushed to GitHub for storage.
+The web application was developed using Gitpod code editor, committed to Git as a local repository, and then pushed to GitHub for storage.
 
 ### **6.1. GitHub Pages**
 

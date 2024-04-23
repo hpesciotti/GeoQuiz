@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .then(res => res.json())
         .then(data => {
             allQuestions = data;
-        });
+        }
+    );
 });
 
 // Landing Menu - startquiz brings the user to next section enterPlayerName and instructions //
