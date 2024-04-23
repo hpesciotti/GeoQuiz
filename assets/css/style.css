@@ -43,6 +43,7 @@ header {
     font-size: 2rem;
     padding: 1rem;
     font-weight: 750;
+    z-index: 4;
 }
 
 /* drop-shadow and font inspired by Codehal Tutorial */
@@ -63,7 +64,8 @@ main {
     background: url("../images/background-image.webp") no-repeat center center/cover;
     flex-grow: 1;
     justify-content: center;
-    padding: 0
+    padding: 0;
+    z-index: 1;
 }
 
 /* Options Panel */
@@ -118,6 +120,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#no-record-set {
+    display: block;
+}
+
+#lead-name-score {
+    display: none;
 }
 
 /* Instruction Box */
@@ -207,6 +217,7 @@ main {
     padding: 1em 1em;
     justify-content: center;
     min-width: 60vw;
+    z-index: 10;
 }
 
 #question-section {

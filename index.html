@@ -59,6 +59,7 @@
                             quiz.</li>
                         <li class="instructions-list">4. To restart the quiz, click on the log or refresh the page.</li>
                         <li class="instructions-list">5. You can also choose to play again at the end of the quiz.</li>
+                        <li class="instructions-list">6. If played on mobile devices, it is recommended to do so in portrait orientation.</li>
                     </ul>
                     <div id="sign-in-container">
                         <br>
@@ -79,6 +80,8 @@
                 <div id="leaderboard-container">
                     <h2 class="header-word-2"><i class="fa-solid fa-award"></i> Leaderboard <i
                             class="fa-solid fa-medal"></i></h2>
+                    <h3 id= "lead-name-score" class="header-word-2">Name and Score</h3>
+                    <h3 id="no-record-set" class="white-halo">No record has been set yet!</h3>
                     <ul id="leaderboard-list"></ul>
                     <button class="btn-option-panel" onclick="location.reload()">Back to Main Menu</button>
                 </div>
@@ -102,7 +105,7 @@
                     <button class="btn-option">Answer 4</button>
                 </div>
                 <button id="btn-next">Next</button>
-                <button id="btn-final-leaderboard" onclick="callLeaderboard()"> <i class="fa-solid fa-medal"></i>
+                <button id="btn-final-leaderboard" onclick="callLeaderboard()"><i class="fa-solid fa-medal"></i>
                     Leaderboard</button>
                 <div id="progress-bar">
                     <div id="my-progress"></div>

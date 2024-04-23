@@ -10,6 +10,8 @@ const optionsPanel = document.getElementById("options-panel");
 const leaderboardSection = document.getElementById("leaderboard-section");
 const leaderboardList = document.getElementById("leaderboard-list");
 const leaderboardFinalBtn = document.getElementById("btn-final-leaderboard");
+const noRecordSet = document.getElementById("no-record-set");
+const leadNameScore = document.getElementById("lead-name-score");
 
 let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 let allQuestions = [];
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .then(data => {
             allQuestions = data;
         }
-    );
+        );
 });
 
 // Landing Menu - startquiz brings the user to next section enterPlayerName and instructions //
@@ -47,6 +49,13 @@ function callLeaderboard() {
     leaderboardSection.style.display = "block";
     optionsPanel.style.display = "none";
     quizBox.style.display = "none";
+    if (leaderboardList != null) {
+        noRecordSet.style.display = "blocl";
+        leadNameScore.style.display = "none";
+    } else {
+        noRecordSet.style.display = "none";
+        leadNameScore.style.display = "block";
+    };
     leaderboardList.innerHTML = leaderboard.map(lbScore => {
         return `<li class="white-halo">${lbScore.username}........${lbScore.score}</li>`;
     }).join('');
@@ -77,13 +86,13 @@ function addToleaderboard() {
 
     leaderboard.push(lbScore);
 
-    leaderboard.sort((a,b) => {
+    leaderboard.sort((a, b) => {
         return b.score - a.score;
     });
 
     leaderboard.splice(5);
 
-    localStorage.setItem("leaderboard", JSON.stringify(leaderboard)); 
+    localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
 }
 
 // The stopwatch is used as a variable that composes the calculus of the Final Score
@@ -97,8 +106,8 @@ function stopStopwatch() {
 
 // Calculate the Final Score (LeaderboardScore) to be shown on the Leaderboard
 function calcLeaderboardScore() {
-    let eslapseTimeMinutes = (elapsedTime/60000);
-    leaderboardScore = Math.floor(((score * score) + (score / eslapseTimeMinutes))*100); 
+    let eslapseTimeMinutes = (elapsedTime / 60000);
+    leaderboardScore = Math.floor(((score * score) + (score / eslapseTimeMinutes)) * 100);
     window.localStorage.setItem("leaderboardScore", leaderboardScore); // add the varible leaderboardScore to the local storage for further use in addToleaderboard()
 }
 
@@ -250,7 +259,7 @@ function displayScore() {
     stopStopwatch();
     calcLeaderboardScore();
     addToleaderboard();
-    removeQuestions(); 
+    removeQuestions();
     if (score <= 5) {
         questionElement.style.textAlign = 'center';
         questionElement.innerHTML = `You scored ${score} out of 10!<br>
