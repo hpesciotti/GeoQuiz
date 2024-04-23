@@ -89,9 +89,9 @@ Responsibility is essential for the app as it allows users to access the quiz fr
 ### **2.2. User Stories**
 
 #### **First Time Visitor Goals**
-- I want to navigate through the pages easily and have a good user interface.
-- I want to feel challenged and amazed by the quiz.
-- I want to get my score in an easy-to-read format.
+- I want to navigate through the pages easily and have a good user interface.
+- I want to feel challenged and amazed by the quiz.
+- I want to get my score in an easy-to-read format.
 
 #### **Returning Visitor Goals**
 - I want to check the leaderboard.
@@ -146,6 +146,17 @@ The colour scheme chosen is inspired by hues found in nature but in more vivid t
 ![Colour Scheme](docs/documentation/colour-scheme.png)
 
 The selection of text and background took into consideration the contrast ratio of at least Level AA. [EightShape contrast grid](docs/documentation/contrast-grid.png) is present in the documentation. The white fonts with [drop-shadow](docs/documentation/drop-shadow-typography.png) present on the user name and leaderbord are not classified as AAA or AA, but the colour used on the drop-shadow effect are, highliting the letters from the background.
+
+Moreover, regarding the drop shadow effect, I tried to get a score superior to 5 on Adobe Color.  The following chart displays some changes to the drop-shadow colours aiming for better readability.
+- Drop-shadow  - chosen color
+
+|	Element	|	Previous	|	Final	|
+|	 :----	|	  :----	|	  :------------:|
+|	Drop-Shadow username	|	[AA contrast ratio 8.48:1](docs/documentation/adobe_color_enhance_contrast_5.png)	|	-	|
+|	Drop-Shadow correct answer	|	[AA contrast ratio 7.9:1](docs/documentation/adobe_color_enhance_contrast_2.png)	|	-	|	-	|
+|	Drop-Shadow incorrect answer	|	[AA contrast ratio 6.63:1](docs/documentation/adobe_color_enhance_contrast_3.png)	|	[AA contrast ratio 10.03:1](docs/documentation/adobe_color_enhance_contrast_4.png)	|
+|	
+
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -294,7 +305,7 @@ These issues with HTML structure were resolved after validation by the W3C valid
 ##### **W3C Validation Chart**
 |	Page	|	Result	|	Screenshot	|
 |	 :----	|	  :----	|	  :------------:|
-|	[Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	No erros/warnings	|	[W3 validator Index](docs/documentation/w3-checker-index.png)	|
+|	[Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	No erros/warnings	|	[W3 validator Index](docs/documentation/w3c-html-validator-index.png)	|
 |	[404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	No erros/warnings	|	[W3 validator 404](docs/documentation/w3c-html-validator-404.png)
 |	
 
@@ -349,6 +360,14 @@ Additionally, JSHint detected three unused variables startQuiz, callLeaderboard 
 
 ### **5.3. Unsolved Bugs** 
 
+It should be noted that the web application was developed for use in portrait mode on mobile devices. However, if the user chooses to change the orientation to landscape, the design will become clunky but responsive. In addition, regardless of the z-index, the logo will overlap with the question container in this display mode. It is likely due to how the browser reads the HTML, overriding the CSS. So, I added a final instruction recommending the use of landscape on mobile devices. Apart from that, no other bug was detected during my testing.
+
+<details open>
+<summary>Lanscape mode in mobile devices</summary>
+
+![Landscape Mobile](docs/documentation/p-bug.png)
+
+</details>
 
 ## **6. Deployment**
 
@@ -393,13 +412,13 @@ VI. Change the current working directory to the location where you want the clon
 VII. Type `git clone`, and then paste the URL you copied in Step 4.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/hpesciotti/GeoQuiz
 ```
 
 VIII. Finally, press Enter. Your local clone has now been created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/hpesciotti/GeoQuiz
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
