@@ -39,21 +39,21 @@ header {
 }
 
 /* Title */
-/* drop-shadow and font inspired by Codehal Tutorial */
 .header-title {
     font-size: 2rem;
     padding: 1rem;
     font-weight: 750;
 }
 
+/* drop-shadow and font inspired by Codehal Tutorial */
 #header-word-1 {
     color: #daf5ec;
-    filter: drop-shadow(0 0 2px #33414e);
+    filter: drop-shadow(0 0 5px #33414e);
 }
 
 .header-word-2 {
     color: #4996a1;
-    filter: drop-shadow(0 0 2px #f3f5ed);
+    filter: drop-shadow(0 0 5px #f3f5ed);
 }
 
 /* Main */
@@ -137,7 +137,7 @@ main {
 /* Sign in */
 .white-halo {
     color: #FAF9F6;
-    filter: drop-shadow(0 0 2px #33414e);
+    filter: drop-shadow(0 0 5px #33414e);
     font-size: 1.2em;
     font-weight: 450;
     text-align: center;
@@ -328,14 +328,14 @@ main h3 {
 
 #correct-counter {
     color: #e7f0e9;
-    filter: drop-shadow(0 0 2px #2a494c);
+    filter: drop-shadow(0 0 5px #2a494c);
     font-weight: 500;
     font-size: 1.3rem;
 }
 
 #incorrect-counter {
     color: #e7f0e9;
-    filter: drop-shadow(0 0 2px #95242d);
+    filter: drop-shadow(0 0 5px #95242d);
     font-weight: 500;
     font-size: 1.3rem;
 }
