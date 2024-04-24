@@ -135,7 +135,7 @@ In this sense, I have identified three essential stages for the app to meet the 
 
 #### **Imagery**
 
-The site's background image was obtained through Adobe Firefly AI Image Generator application. The generative AI, based on a prompt indicating the colour palette, the illustration style, and the elements to be displayed, returned the [image](assets/images/background-image.webp) present in the application. Furthermore, the image was compressed and convert to webp.
+The site's background image was obtained through Adobe Firefly AI Image Generator application. The generative AI, based on a prompt indicating the colour palette, the illustration style, and the elements to be displayed, returned the [image](docs/documentation/background-image.png) present in the application. Furthermore, the image was compressed and convert to webp.
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -155,14 +155,13 @@ Moreover, regarding the drop shadow effect, I tried to get a score superior to 5
 |	Drop-Shadow username	|	[AA contrast ratio 8.48:1](docs/documentation/adobe_color_enhance_contrast_5.png)	|	-	|
 |	Drop-Shadow correct answer	|	[AA contrast ratio 7.9:1](docs/documentation/adobe_color_enhance_contrast_2.png)	|	-	|	-	|
 |	Drop-Shadow incorrect answer	|	[AA contrast ratio 6.63:1](docs/documentation/adobe_color_enhance_contrast_3.png)	|	[AA contrast ratio 10.03:1](docs/documentation/adobe_color_enhance_contrast_4.png)	|
-|	
 
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Typography**
 
-The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/). I opt to use only one font on this web application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA)
+The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/?query=poppins). I opt to use only one font on this web application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
