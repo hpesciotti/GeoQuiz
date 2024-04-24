@@ -193,18 +193,41 @@ Once the user's name is entered, a function is called to randomly pull ten quest
 
 Also, in the code sphere,  setQuestionsOptions sets the answer options for each question in the gameQuestions array by shuffling them. It employs the Durstenfeld shuffle algorithm, which efficiently randomizes the order of elements in an array. The implementation of this function draws inspiration from a thread on Stack Overflow regarding [How to randomize (shuffle) a JavaScript array.](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
 
+At last, the presence of a back to main menu button ensures that users can navigate freely.
+
 <details open>
 <summary>Instructions/Username</summary>
 
-![Landing page - mobile](docs/documentation/instructions-mobile.png)
+![Instructions/Username - mobile](docs/documentation/instructions-mobile.png)
 
-![Landing page - desktop](docs/documentation/instructions-desktop.png)
+![Instructions/Username - desktop](docs/documentation/instructions-desktop.png)
 
 </details>
 
 ##### **Quiz Questions**
 
-##### **Leaderboard**
+On the pages with the questions, there are counters for correct and incorrect answers and the player's name.
+
+The question is presented as text, and the answer options as buttons. In the desktop version, a hover effect indicates when the cursor has passed. Just one option can be selected, as just one button can be pressed. 
+
+If the answer is correct, the button appears green. If the user gets the answer wrong, the chosen answer button turns red, and the right answer is shown in green. 
+
+The next button bring the user to next questions. This button is only revealed if the user choses one answer option.
+
+<details open>
+<summary>Quiz Questions</summary>
+
+![Quiz Questions 1 - mobile](docs/documentation/questions-1-mobile.png)
+
+![Quiz Questions 2 - mobile](docs/documentation/questions-2-mobile.png)
+
+![Quiz Questions 1 - desktop](docs/documentation/questions-1-desktop.png)
+
+![Quiz Questions 2 - desktop](docs/documentation/questions-2-desktop.png)
+
+</details>
+
+##### **Score Page**
 
 #### **Error 404 Page**
 
