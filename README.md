@@ -370,8 +370,7 @@ These issues with HTML structure were resolved after validation by the W3C valid
 |	Page	|	Result	|	Screenshot	|
 |	 :----	|	  :----	|	  :------------:|
 |	[Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	No erros/warnings	|	[W3 validator Index](docs/documentation/w3c-html-validator-index.png)	|
-|	[404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	No erros/warnings	|	[W3 validator 404](docs/documentation/w3c-html-validator-404.png)
-|	
+|	[404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	No erros/warnings	|	[W3 validator 404](docs/documentation/w3c-html-validator-404.png)	
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -390,14 +389,12 @@ Page	|	Score	|	Screenshots
  :----	|	  :----	|	  :------------
 [Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	96	|	[W3 validator Index](docs/documentation/index-lighthouse-desktop-index.png)
 [404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	98	|	[W3 validator Contact](docs/documentation/index-lighthouse-desktop-404.png)
-|	
 
 ##### **Lighthouse performance Chart - Mobile**
 Page	|	Score	|	Screenshots
  :----	|	  :----	|	  :------------
 [Index](https://hpesciotti.github.io/GeoQuiz/index.html)	|	90	|	[W3 validator Index](docs/documentation/index-lighthouse-mobile-index.png)
 [404](https://hpesciotti.github.io/GeoQuiz/404.html)	|	94	|	[W3 validator Contact](docs/documentation/index-lighthouse-mobile-404.png)
-|	
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -418,7 +415,6 @@ Additionally, JSHint detected three unused variables startQuiz, callLeaderboard 
 |	Due to elongated aspect ratios, both Galaxy Z Fold 5 and Surface Duo devices, resulted in the username text option superposing the question container	|	I designed two media queries to accommodate those device's aspect ratios. The solution revolved around adding a bigger max-width. 	|	[Bug-Galaxy Fold](docs/documentation/bug-galaxy-fold.png)<br>[Bug-Surface Duo](docs/documentation/bug-surface-duo.png)
 |	During the test phase, on choosing to play again through the quiz, I noticed that, despite the insertion of a function to set to zero, the right or wrong answers counter, the values would only update and display the score of the current section on the counter and after a selection of a correct question.<br>Finally, as mentioned, the leaderboard was added at the end of the web application development process. Despite the fix indicated above, with a series of quiz completions and/or starting the game via the leaderboard, in the case of players with the same username, the final score was obtained after logging in by skipping the questions altogether.	|	I tried a number of solutions, such as resetting the value of the score and wrongScore variables to 0, but the error still persisted. So, in order not to involve a complex refactoring of the code, I replaced the runQuiz() function in the play again option with location.reload(), reloading the DOM.	|	[Bug](docs/documentation/bug-2.png) <br> [Fix](docs/documentation/fix-2.png)
 |	The leaderboard feature was inserted late in the development process. Once the action "play again" is chosen from the leaderboard, the text element of this feature is displayed on the screen. If you enter a play-again loop from the leaderboard, eventually, the game crashes.	|	The solution to this bug was simple. All I had to do was add the option not to display the leaderboard section ( leaderboardSection.style.display = "none";) to the startQuiz() function.	|	<br> [Bug - figure 1](docs/documentation/bug-3-0.png) <br> [Bug - figure 2](docs/documentation/bug-3-1.png) <br> [Fix](docs/documentation/fix-3.png)
-|	
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
