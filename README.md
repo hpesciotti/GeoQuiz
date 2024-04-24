@@ -161,7 +161,7 @@ Moreover, regarding the drop shadow effect, I tried to get a score superior to 5
 
 #### **Typography**
 
-The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/?query=poppins). I opt to use only one font on this web application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA)
+The employed typography was Poppins provided by [Google Fonts](https://fonts.google.com/?query=poppins). I opt to use only one font on this web application in order to maintain uniformity. This choice was inspired by [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA).
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -175,7 +175,7 @@ A Welcome or Landing page, The Main Menu greets the user by briefly introducing 
 
 As far as the code is concerned, at this stage, when the DOM is fully loaded, the question database in json format is assigned to the (const) allQuestions variable via the event listener and the fetch API. This process was present in [Kevin Flanagan PP2 Project](https://github.com/KevinFlanagan7/Masters-quiz) serving as an inspiration for this function. 
 
-<details open>
+<details>
 <summary>Main Menu</summary>
 
 ![Landing page - mobile](docs/documentation/main-menu-mobile.png)
@@ -183,6 +183,7 @@ As far as the code is concerned, at this stage, when the DOM is fully loaded, th
 ![Landing page - desktop](docs/documentation/main-menu-desktop.png)
 
 </details>
+
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Instructions/Username**
@@ -195,7 +196,7 @@ Also, in the code sphere,  setQuestionsOptions sets the answer options for each 
 
 At last, the presence of a back to main menu button ensures that users can navigate freely.
 
-<details open>
+<details>
 <summary>Instructions/Username</summary>
 
 ![Instructions/Username - mobile](docs/documentation/instructions-mobile.png)
@@ -203,6 +204,7 @@ At last, the presence of a back to main menu button ensures that users can navig
 ![Instructions/Username - desktop](docs/documentation/instructions-desktop.png)
 
 </details>
+
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Quiz Questions**
@@ -219,7 +221,7 @@ This section was inspired by [GreatStack's video tutorial](https://www.youtube.c
 
 A progress bar appears at the bottom of the page to show the user their progress throughout the 10-question quiz. This feature was designed based on [W3Schools tutorial](https://www.w3schools.com/howto/howto_js_progressbar.asp).
 
-<details open>
+<details>
 <summary>Quiz Questions</summary>
 
 ![Quiz Questions 1 - mobile](docs/documentation/questions-1-mobile.png)
@@ -231,6 +233,7 @@ A progress bar appears at the bottom of the page to show the user their progress
 ![Quiz Questions 2 - desktop](docs/documentation/questions-2-desktop.png)
 
 </details>
+
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Score Page**
@@ -239,7 +242,7 @@ The score page again displays the player's name, which on this screen is capture
 
 At the bottom of the page, you will be presented with the option of checking the leaderboard and playing the game again. The latter reloads the page, resetting all parameters and functions.
 
-<details open>
+<details>
 <summary>Score Page</summary>
 
 ![Score Page - mobile](docs/documentation/quiz-score-mobile.png)
@@ -247,6 +250,7 @@ At the bottom of the page, you will be presented with the option of checking the
 ![Score Page - desktop](docs/documentation/quiz-score-desktop.png)
 
 </details>
+
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Leaderboard**
@@ -258,7 +262,8 @@ When no entries in the array are placed in local storage, the placeholderLeaderb
 The function callLeaderboard is inspired by Deeksa Varma's PP2 Project and handles the highscore data. It retrieves the variables playerName and leaderboardScore (final score) from local storage. The function then creates an array lbScore containing five objects using the splice method, sorting them by leaderboardScore or score. Additionally, it ensures that lower scores are pushed after higher ones in the array.
 
 Finally, just like the instructions page, there is a back to main menu button to ensure good navigation to the user.
-<details open>
+
+<details>
 <summary>Leaderboard</summary>
 
 ![Leaderboard - 1 - mobile](docs/documentation/leaderboard-mobile-1.png)
@@ -268,12 +273,14 @@ Finally, just like the instructions page, there is a back to main menu button to
 ![Leaderboard - 2 - desktop](docs/documentation/leaderboard-desktop-2.png)
 
 </details>
+
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Error 404 Page**
 
 This is a conventional 404 error page, with text explaining that a link is missing. I designed the page with a button to return to the index page; in fact, the button is just an anchor element. This customized page replaces the standard GitHub page.
-<details open>
+
+<details>
 <summary>Error 404</summary>
 
 ![Error 404 - mobile](docs/documentation/404-mobile.png)
@@ -319,6 +326,8 @@ The data would be store in a server, instead of the local storage.
 
 - [Adobe Firefly AI Image Generator](https://firefly.adobe.com/): used to create application background image
 
+- [Adobe Color](https://color.adobe.com/pt/create/color-contrast-analyzer): checks the colour contrast
+
 - [Favicon.io](https://favicon.io/): for ice cream favicon  
 
 - [Tiny PNG](https://tinypng.com/): to compress images
@@ -330,6 +339,8 @@ The data would be store in a server, instead of the local storage.
 - [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools): to debug and for testing responsiveness 
 
 - [Google Chrome Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk): for auditing the performance of the web application
+
+- [Mozilla Dev Tools](https://firefox-source-docs.mozilla.org/devtools-user/): to debug and for testing responsiveness 
 
 - [W3C Validator](https://validator.w3.org/#validate_by_input): for validating HTML code 
 
@@ -414,7 +425,7 @@ Additionally, JSHint detected three unused variables startQuiz, callLeaderboard 
 |	Due to elongated aspect ratios, both Galaxy Z Fold 5 and Surface Duo devices, resulted in the username text option superposing the question container	|	I designed two media queries to accommodate those device's aspect ratios. The solution revolved around adding a bigger max-width. 	|	[Bug-Galaxy Fold](docs/documentation/bug-galaxy-fold.png)<br>[Bug-Surface Duo](docs/documentation/bug-surface-duo.png)
 |	During the test phase, on choosing to play again through the quiz, I noticed that, despite the insertion of a function to set to zero, the right or wrong answers counter, the values would only update and display the score of the current section on the counter and after a selection of a correct question.<br>Finally, as mentioned, the leaderboard was added at the end of the web application development process. Despite the fix indicated above, with a series of quiz completions and/or starting the game via the leaderboard, in the case of players with the same username, the final score was obtained after logging in by skipping the questions altogether.	|	I tried a number of solutions, such as resetting the value of the score and wrongScore variables to 0, but the error still persisted. So, in order not to involve a complex refactoring of the code, I replaced the runQuiz() function in the play again option with location.reload(), reloading the DOM.	|	[Bug](docs/documentation/bug-2.png) <br> [Fix](docs/documentation/fix-2.png)
 |	The leaderboard feature was inserted late in the development process. Once the action "play again" is chosen from the leaderboard, the text element of this feature is displayed on the screen. If you enter a play-again loop from the leaderboard, eventually, the game crashes.	|	The solution to this bug was simple. All I had to do was add the option not to display the leaderboard section ( leaderboardSection.style.display = "none";) to the startQuiz() function.	|	<br> [Bug - figure 1](docs/documentation/bug-3-0.png) <br> [Bug - figure 2](docs/documentation/bug-3-1.png) <br> [Fix](docs/documentation/fix-3.png)
-|	I detected a recurring error associated with the absence of the file android-chrome-192x192.png in the google chrome browser, which is in the favicon folder.	|	I found the solution to this bug in a [Stack Overflow discussion](https://stackoverflow.com/questions/33032803/android-chrome-website-icon-is-missing). I just had to remove a bar automatically generated by the favicon site.	|	[Bug](docs/documentation/error-chrome-192.png)
+|	I detected a recurring error associated with the absence of the file android-chrome-192x192.png in the google chrome browser, which is in the favicon folder.	|	I found the solution to this bug in a [Stack Overflow discussion](https://stackoverflow.com/questions/33032803/android-chrome-website-icon-is-missing). I just had to remove a bar automatically generated by the favicon site.	|	[Bug](docs/documentation/bug-chrome-192.png)
 
 [Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
@@ -422,7 +433,7 @@ Additionally, JSHint detected three unused variables startQuiz, callLeaderboard 
 
 It should be noted that the web application was developed for use in portrait mode on mobile devices. However, if the user chooses to change the orientation to landscape, the design will become clunky but responsive. In addition, regardless of the z-index, the logo will overlap with the question container in this display mode. It is likely due to how the browser reads the HTML, overriding the CSS. So, I added a final instruction recommending the use of landscape on mobile devices. Apart from that, no other bug was detected during my testing.
 
-<details open>
+<details>
 <summary>Lanscape mode in mobile devices</summary>
 
 ![Landscape Mobile](docs/documentation/p-bug.png)
