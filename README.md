@@ -174,7 +174,7 @@ The employed typography was Poppins provided by [Google Fonts](https://fonts.goo
 
 A Welcome or Landing page, The Main Menu greets the user by briefly introducing the web application: "A Geography Quiz for all ages and backgrounds." Sequentially, a call to action invites users to challenge themselves by starting the quiz. The page also has two buttons, one to access the quiz and the other to display the leaderboard.
 
-As far as the code is concerned, at this stage, when the DOM is fully loaded, the question database in j.son format is assigned to the (const) allQuestions variable via the event listener and the fetch API.
+As far as the code is concerned, at this stage, when the DOM is fully loaded, the question database in json format is assigned to the (const) allQuestions variable via the event listener and the fetch API. This process was present in [Kevin Flanagan PP2 Project](https://github.com/KevinFlanagan7/Masters-quiz) serving as an inspiration for this function. 
 
 <details open>
 <summary>Main Menu</summary>
@@ -184,8 +184,9 @@ As far as the code is concerned, at this stage, when the DOM is fully loaded, th
 ![Landing page - desktop](docs/documentation/main-menu-desktop.png)
 
 </details>
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
-##### **Instructions/Username**
+#### **Instructions/Username**
 
 This page defines the guidelines and provides general instructions on how the quiz works. The user must enter a valid username in a text input area with a maximum length of 15 characters. The user entry is saved in local storage and will later be used in the leaderboard. The function to get the username was inspired by Amy Richardson's PP2 project. The username is also reproduced on the following page via inner.html
 
@@ -203,8 +204,9 @@ At last, the presence of a back to main menu button ensures that users can navig
 ![Instructions/Username - desktop](docs/documentation/instructions-desktop.png)
 
 </details>
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
-##### **Quiz Questions**
+#### **Quiz Questions**
 
 On the pages with the questions, there are counters for correct and incorrect answers and the player's name.
 
@@ -213,6 +215,10 @@ The question is presented as text, and the answer options as buttons. In the des
 If the answer is correct, the button appears green. If the user gets the answer wrong, the chosen answer button turns red, and the right answer is shown in green. 
 
 The next button bring the user to next questions. This button is only revealed if the user choses one answer option.
+
+This section was inspired by [GreatStack's video tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8), whic help me set the basic structure for assembling the quiz app. As well as, [Codehal's video tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA): help put together the displayQuestion function.
+
+A progress bar appears at the bottom of the page to show the user their progress throughout the 10-question quiz. This feature was designed based on [W3Schools tutorial](https://www.w3schools.com/howto/howto_js_progressbar.asp).
 
 <details open>
 <summary>Quiz Questions</summary>
@@ -226,8 +232,44 @@ The next button bring the user to next questions. This button is only revealed i
 ![Quiz Questions 2 - desktop](docs/documentation/questions-2-desktop.png)
 
 </details>
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
-##### **Score Page**
+#### **Score Page**
+
+The score page again displays the player's name, which on this screen is captured and sent to the storage location. The web application then returns the number of correct questions out of ten. Next, the final score, consisting of a mathematical equation([equation](docs/documentation/final-score-equation.png)) emphasising the number of correct questions, is displayed. Still, it incorporates the total time([stopclock-W3Schools](https://www.w3schools.com/js/js_dates.asp)) the user took to complete the quiz. The option to integrate time is intended only as a unbundle factor in the leaderboard. The equation returns a 4 to 5-digit number that resembles video game high scores. Finally, a personalized message is returned according to the number of hits the user has made.
+
+At the bottom of the page, you will be presented with the option of checking the leaderboard and playing the game again. The latter reloads the page, resetting all parameters and functions.
+
+<details open>
+<summary>Score Page</summary>
+
+![Score Page - mobile](docs/documentation/quiz-score-mobile.png)
+
+![Score Page - desktop](docs/documentation/quiz-score-desktop.png)
+
+</details>
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
+
+#### **Leaderboard**
+
+Without the aid of remote servers, a leaderboard was implemented to save the data in the browser's local storage. I was introduced to this solution via the [Deeksa Varma PP2 web application](https://github.com/deeksha-varma/portfolio_project_2). 
+
+When no entries in the array are placed in local storage, the placeholderLeaderboard function sets a default message stating that no records have been saved. The scoreboard replaces the message as soon as there is an entry.
+
+The function callLeaderboard is inspired by Deeksa Varma's PP2 Project and handles the highscore data. It retrieves the variables playerName and leaderboardScore (final score) from local storage. The function then creates an array lbScore containing five objects using the splice method, sorting them by leaderboardScore or score. Additionally, it ensures that lower scores are pushed after higher ones in the array.
+
+Finally, just like the instructions page, there is a back to main menu button to ensure good navigation to the user.
+<details open>
+<summary>Leaderboard</summary>
+
+![Leaderboard - 1 - mobile](docs/documentation/leaderboard-mobile-1.png)
+![Leaderboard - 2 - mobile](docs/documentation/leaderboard-mobile-2.png)
+
+![Leaderboard - 1 - desktop](docs/documentation/leaderboard-desktop-1.png)
+![Leaderboard - 2 - desktop](docs/documentation/leaderboard-desktop-2.png)
+
+</details>
+[Back to top](https://github.com/hpesciotti/GeoQuiz?tab=readme-ov-file#geoquiz--a-geography-quiz-for-all-ages-and-backgrounds)
 
 #### **Error 404 Page**
 
@@ -235,7 +277,9 @@ This is a conventional 404 error page, with text explaining that a link is missi
 <details open>
 <summary>Error 404</summary>
 
-![Error 404](docs/documentation/error-404.png)
+![Error 404 - mobile](docs/documentation/404-mobile.png)
+
+![Error 404 - desktop](docs/documentation/404-page.png)
 
 </details>
 
